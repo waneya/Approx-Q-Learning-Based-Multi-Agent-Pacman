@@ -16,9 +16,10 @@ _General comments about the project goes here_
 
 ## Offense
 
-| Consideration | Notes |
-| ------------- | ----- |
-| 
+| Consideration | Notes                      |
+| ------------- | -------------------------- |
+| Eating food   | - test -2
+
 ## Defense
 
 | Consideration | Notes |
