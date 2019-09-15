@@ -18,7 +18,7 @@ _General comments about the project goes here_
 
 | Consideration | Function                   |
 | ------------- | -------------------------- |
- Eating food   | getFood(self, gameState)   
+| Eating food   | getFood(self, gameState)   |  
 | Find capsules | getCapsules(self, gameState)|
 
 ## Defense
@@ -36,6 +36,8 @@ _General comments about the project goes here_
 | Overall score | getScore(self, gameState)                 |
 | Distance b/w objects | getMazeDistance(self, pos1, pos2)  |
 | Get belief on opponents | displayDistributionsOverPositions |
+| Get actions | getLegalActions |
+| Get successor states | generateSuccessor |
 
 
 
