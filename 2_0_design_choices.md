@@ -35,7 +35,7 @@ _General comments about the project goes here_
 | Find team     | getTeam(self, gameState)                  |
 | Overall score | getScore(self, gameState)                 |
 | Distance b/w objects | getMazeDistance(self, pos1, pos2)  |
-| Get belief on opponents pos displayDistributionsOverPositions(self, distributions)|
+| Get belief on opponents | displayDistributionsOverPositions |
 
 
 
