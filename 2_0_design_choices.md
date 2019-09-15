@@ -38,7 +38,6 @@ _General comments about the project goes here_
 | Get belief on opponents | displayDistributionsOverPositions |
 | Get actions | getLegalActions |
 | Get successor states | generateSuccessor |
-
-
+| Noisy distance to each agent | getAgentDistances |
 
 [Back Home](/home) | [Next Home](/2_1_approach)
