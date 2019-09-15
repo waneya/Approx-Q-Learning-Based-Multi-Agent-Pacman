@@ -1,7 +1,12 @@
 # Design Choices
 
-summary of your design choices
-
+- Heuristic Search Algorithms (using general or pacman specific heuristic functions) 
+- Classsical Planning (PDDL and calling a classical planner, see subsection below) 
+- Policy iteration or Value Iteration (Model-Based MDP)
+- Monte Carlo Tree Search or UCT (Model-Free MDP)
+- Reinforcement Learning – classical, approximate or deep Q-learning (Model-Free MDP) 
+- Goal Recognition techniques (to infer intentions of opponents)
+- Game Theoretic Methods
 
 ## General Comments
 
