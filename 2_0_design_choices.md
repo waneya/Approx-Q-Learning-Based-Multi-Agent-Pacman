@@ -16,15 +16,27 @@ _General comments about the project goes here_
 
 ## Offense
 
-| Consideration | Notes                      |
+| Consideration | Function                   |
 | ------------- | -------------------------- |
-| Eating food   | - test -2
+| Eating food   | getFood(self, gameState)   |
+| Find capsules | getCapsules(self, gameState)|
 
 ## Defense
 
-| Consideration | Notes |
-| ------------- | ----- |
-| 
+| Consideration | Function                                  |
+| ------------- | ----------------------------------------- |
+| Defending food| getFoodYouAreDefending(self, gameSate)    |
+
+## General
+
+| Consideration | Function                                  |
+| ------------- | ----------------------------------------- |
+| Find opponents| getOpponents(self, gameState)             |
+| Find team     | getTeam(self, gameState)                  |
+| Overall score | getScore(self, gameState)                 |
+| Distance b/w objects | getMazeDistance(self, pos1, pos2)  |
+| Get belief on opponents pos displayDistributionsOverPositions(self, distributions)|
+
 
 
 [Back Home](/home) | [Next Home](/2_1_approach)
