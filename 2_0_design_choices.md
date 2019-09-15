@@ -18,7 +18,7 @@ _General comments about the project goes here_
 
 | Consideration | Function                   |
 | ------------- | -------------------------- |
-| Eating food   | getFood(self, gameState)   |
+ Eating food   | getFood(self, gameState)   
 | Find capsules | getCapsules(self, gameState)|
 
 ## Defense
