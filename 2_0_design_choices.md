@@ -6,6 +6,8 @@
 - https://towardsdatascience.com/modern-game-theory-and-multi-agent-reinforcement-learning-systems-e8c936d6de42
 - Reinforcement learning
 - https://github.com/deepmind/trfl/blob/master/docs/index.md 
+- Deep Q-Learning
+- https://towardsdatascience.com/qrash-course-deep-q-networks-from-the-ground-up-1bbda41d3677
 
 ## Techniques
 
