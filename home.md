@@ -27,7 +27,7 @@ List here the full name, email, and student number for each member of the team:
 
 * Student 1's Full Name - Student email - UoM Student number
 * Student 2's Full Name - Student email - UoM Student number
-* Student 3's Full Name - Student email - UoM Student number
+* Maxim Mattvey - mattveym@student.unimelb.edu.au - 694125
 
 
 ## Useful links - Wiki features
