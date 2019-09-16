@@ -8,6 +8,7 @@
 - https://github.com/deepmind/trfl/blob/master/docs/index.md 
 - Deep Q-Learning
 - https://towardsdatascience.com/qrash-course-deep-q-networks-from-the-ground-up-1bbda41d3677
+- https://towardsdatascience.com/how-to-teach-an-ai-to-play-games-deep-reinforcement-learning-28f9b920440a
 
 ## Techniques
 
