@@ -3,7 +3,7 @@
 ## Considerations
 
 - Design an offensive and defensive agent or generalise to a multi-agent problem?
-..- https://towardsdatascience.com/modern-game-theory-and-multi-agent-reinforcement-learning-systems-e8c936d6de42
+.. https://towardsdatascience.com/modern-game-theory-and-multi-agent-reinforcement-learning-systems-e8c936d6de42
 - Reinforcement learning
 ..-https://github.com/deepmind/trfl/blob/master/docs/index.md 
 
