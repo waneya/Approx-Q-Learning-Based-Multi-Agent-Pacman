@@ -26,7 +26,7 @@ You can structure your wiki pages in many different sections and styles. The abo
 List here the full name, email, and student number for each member of the team:
 
 * Student 1's Full Name - Student email - UoM Student number
-* Student 2's Full Name - Student email - UoM Student number
+* Waneya Iqbal - iqbalw@student.unimelb.edu.au - 919750
 * Maxim Mattvey - mattveym@student.unimelb.edu.au - 694125
 
 
