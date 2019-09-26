@@ -1,4 +1,4 @@
-**Experiments with Enhancing Features For Offensive Agents (This in just for information and should not be considered part of Wiki Now unless all team members agree):**
+**Experiments with Enhancing Features For Offensive Agents (It is misplaced now. Moreover, This in just for information and should not be considered part of Wiki Now unless all team members agree):**
 
 The idea is to make sure as soon as the opponent's defender approaches Offensive Pacman, Pacman run away without caring for anything else. Following two features were tried for this. Enhancement is to add forward knowledge. Two favorable features are given below. All information below is experimentally derived by looking at variables carefully and optimizing. To incorporate forward knowledge, we should add advanced algorithms (as already planned).
 
