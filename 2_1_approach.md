@@ -1,7 +1,5 @@
 # AI Method 1 - Approximate Q-Learning
 
-Your notes about this part of the project, including acknowledgement, comments, strengths and limitations, etc.
-
 # Table of Contents
 - [Governing Strategy Tree](#governing-strategy-tree)
   * [Motivation](#motivation)
@@ -16,7 +14,7 @@ Your notes about this part of the project, including acknowledgement, comments, 
 ### Motivation  
 In order to eliminate the need for a large Q-Table, and scale our solution, we implemented an approximate Q-Function. Weights were derived using reinforcement Q-Learning. Doing so enabled us to reasonably estimate Q(s,a) for states we had not seen before. 
 
-Our initial thoughts were to use a neural network to approximate the Q-Value, however we deemed that the time frame of the project bounded our ability to fully implement this methodology. As an alternative, we opted for the aforementioned approach. 
+Our initial thoughts were to use a neural network to approximate the Q-Value (deep Q networks), however we deemed that the time frame of the project bounded our ability to fully implement this methodology. As an alternative, we opted for the aforementioned approach. 
 
 [Back to top](#table-of-contents)
 
