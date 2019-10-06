@@ -34,15 +34,14 @@ Instead of initialising with a zero weight vector, we used judgement to create i
 
 #### Hyperparameters
 ``` python
-    # Hyperparam
-    self.trainEps = 10     # Max eps
-    self.gamma = 0.99        # Future reward discount
-    self.alpha = 0.15
+self.trainEps = 10 
+self.gamma = 0.99     
+self.alpha = 0.15
 
-    # Epsilon greedy params
-    self.epsilonStart = 1.0  # Expoloration probability at start
-    self.epsilonMin = 0.01   # Minimum exploration probability
-    self.epsilonStep = (self.epsilonStart-self.epsilonMin)/self.trainEps
+# Epsilon greedy parameters
+self.epsilonStart = 1.0 
+self.epsilonMin = 0.01  
+self.epsilonStep = (self.epsilonStart-self.epsilonMin)/self.trainEps
 ```
 [Back to top](#table-of-contents)
 
