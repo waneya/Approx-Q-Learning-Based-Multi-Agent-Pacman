@@ -23,7 +23,8 @@ We implemented [number] features for our offensive, and [number] features for ou
 
 #### Reward Shaping
 We recognised early on that the reward would primarily occur late in the game, sometimes only at the terminal state. To expedite the learning process we modified the reward function. For our offensive agent, the reward was:
-`(1 - (foodLeft/self.startFood)) +  self.getScore(gameState)`
+```python
+(1 - (foodLeft/self.startFood)) +  self.getScore(gameState)```
 
 Whereas for the defensive, it was:
 `(foodProtecting / self.startFoodProtecting)`
