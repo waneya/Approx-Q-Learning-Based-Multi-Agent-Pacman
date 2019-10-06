@@ -1,4 +1,4 @@
-# AI Method 1 - Computational Approach
+# AI Method 1 - Approximate Q-Learning
 
 Your notes about this part of the project, including acknowledgement, comments, strengths and limitations, etc.
 
