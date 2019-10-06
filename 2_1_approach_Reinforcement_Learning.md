@@ -35,7 +35,6 @@ Instead of initialising with a zero weight vector, we used judgement to create i
 
 #### Hyperparameters
 ``` python
-self.trainEps = 10 
 self.gamma = 0.99     
 self.alpha = 0.15
 
