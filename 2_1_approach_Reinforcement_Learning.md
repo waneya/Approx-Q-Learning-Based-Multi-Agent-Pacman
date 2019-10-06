@@ -23,8 +23,7 @@ We implemented [number] features for our offensive, and [number] features for ou
 
 #### Reward Shaping
 We recognised early on that the reward would primarily occur late in the game, sometimes only at the terminal state. To expedite the learning process we modified the reward function. For our offensive agent, the reward was:
-```python
-(1 - (foodLeft/self.startFood)) +  self.getScore(gameState)```
+`(1 - (foodLeft/self.startFood)) +  self.getScore(gameState)`
 
 Whereas for the defensive, it was:
 `(foodProtecting / self.startFoodProtecting)`
@@ -33,6 +32,18 @@ We believed these heuristics best represented the future reward as the score is 
 #### Weight Vector Initialisation
 Instead of initialising with a zero weight vector, we used judgement to create initialised values that we believed represented each features importance. This allowed the reinforcement learning to reach optimisation significantly faster. 
 
+#### Hyperparameters
+``` python
+    # Hyperparam
+    self.trainEps = 10     # Max eps
+    self.gamma = 0.99        # Future reward discount
+    self.alpha = 0.15
+
+    # Epsilon greedy params
+    self.epsilonStart = 1.0  # Expoloration probability at start
+    self.epsilonMin = 0.01   # Minimum exploration probability
+    self.epsilonStep = (self.epsilonStart-self.epsilonMin)/self.trainEps
+```
 [Back to top](#table-of-contents)
 
 ### Trade-offs  
