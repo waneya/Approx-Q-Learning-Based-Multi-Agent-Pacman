@@ -26,7 +26,7 @@ We recognised early on that the reward would primarily occur late in the game, s
 `(1 - (foodLeft/self.startFood)) +  self.getScore(gameState)`
 
 Whereas for the defensive, it was:
-`(foodProtecting / self.startFoodProtecting)`.
+`agentsEaten`.
 
 We believed these heuristics best represented the future reward as the score is primarily a function of the number of food eaten (then retrieved). 
 
