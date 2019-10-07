@@ -33,8 +33,9 @@ We believed these heuristics best represented the future reward as the score is 
 #### Weight Vector Initialisation
 Instead of initialising with a zero weight vector, we used judgement to create initialised values that we believed represented each features importance. This allowed the reinforcement learning to reach optimisation significantly faster. 
 
-#### Hyperparameters
+#### Training
 ``` python
+# Hyperparameters
 self.gamma = 0.99     
 self.alpha = 0.15
 
