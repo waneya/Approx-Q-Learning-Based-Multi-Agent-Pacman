@@ -32,12 +32,9 @@ You can structure your wiki pages in many different sections and styles. The abo
 
 ## Team Members
 
-List here the full name, email, and student number for each member of the team:
-
-* Full Name - Student email - UoM Student number
-* Waneya Iqbal - iqbalw@student.unimelb.edu.au - 919750
-* Maxim Mattvey - mattveym@student.unimelb.edu.au - 694125
-* Matthew O'Halloran mohalloran@student.unimelb.edu.au - 702322
+* Waneya Iqbal        - iqbalw@student.unimelb.edu.au     - 919750
+* Maxim Mattvey       - mattveym@student.unimelb.edu.au   - 694125
+* Matthew O'Halloran  - mohalloran@student.unimelb.edu.au - 702322
 
 ## Useful links - Wiki features
 
