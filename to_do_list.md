@@ -1,4 +1,11 @@
 
+Part (i) - Program implementation
+
+* [ ]  Beat staff_team_basic
+* [ ]  Beat staff_team_medium
+* [ ]  Beat staff_team_top
+* [ ]  Beat staff_team_super (if this is guaranteed, we receive full marks instantly)
+
 Part (iii) Wiki
 * [ ] A clear written description of the design decisions made, approaches taken, challenges experienced, and
 possible improvements [3 marks]
