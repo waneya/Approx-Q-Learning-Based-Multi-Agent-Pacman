@@ -9,7 +9,6 @@ The idea is to make sure as soon as the opponent's defender approaches Offensive
 
 # UoM COMP90054 Contest Project
 
-This Wiki can be used as external documentation to the project.
 - [1. Home and Introduction](/home)
 - [2. Design Choices (Offense/Defense)](/2_0_design_choices)
     - [2.1 Approach Foo](/2_1_approach)
