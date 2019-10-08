@@ -21,3 +21,13 @@ a table and discussion [6 marks]
 * [ ]  A WIKI: describing the approaches implemented, a small table comparing your different agents showing
 their performance in several scenarios. Discuss briefly the table. The link for the recorded oral-presentation
 should be included in the wiki. (5 marks; [inconsistent marking criteria at top, but overall wiki is 9 marks).
+
+In your solution, You have to use at least 2 of the techniques (3 techniques at least for groups of 4) that
+have been discussed in COMP90054. Feel free to combine them in any form. The candidate techniques are:
+* [ ] Heuristic Search Algorithms (using general or pacman specific heuristic functions)
+ Classsical Planning (PDDL and calling a classical planner, see subsection below)
+* [ ]  Policy iteration or Value Iteration (Model-Based MDP)
+* [ ]  Monte Carlo Tree Search or UCT (Model-Free MDP)
+* [ ]  Reinforcement Learning – classical, approximate or deep Q-learning (Model-Free MDP)
+* [ ]  Goal Recognition techniques (to infer intentions of opponents)
+* [ ]  Game Theoretic Methods
