@@ -23,6 +23,7 @@ their performance in several scenarios. Discuss briefly the table. The link for 
 should be included in the wiki. (5 marks; [inconsistent marking criteria at top, but overall wiki is 9 marks).
 
 **At least 2 techniques used (ideally ~4 done well for guaranteed full marks)**
+
 In your solution, You have to use at least 2 of the techniques (3 techniques at least for groups of 4) that
 have been discussed in COMP90054. Feel free to combine them in any form. The candidate techniques are:
 * [ ] Heuristic Search Algorithms (using general or pacman specific heuristic functions)
