@@ -26,6 +26,13 @@ _General comments about the project goes here_
 
 ## Comments per topic
 
+## Files utilised (in addition to files provided by UC Berkeley)
+
+***myTeam.py:*** the main file that implements agent set-up for the game, i.e., defines how they will behave and play the game. It also includes the approximate q-learning methodology for when the agents are training.
+***usefulFunctions.py:*** contains helper methods and heuristic functions that are either made use of in *myTeam.py* or *featureExtraction.py*.
+***featureExtraction.py:*** contains the majority of functions that are utilised to generate features within *myTeam.py*.
+
+
 ## Offense
 
 | Consideration | Function                   |
