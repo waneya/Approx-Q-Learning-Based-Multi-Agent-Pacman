@@ -20,6 +20,12 @@
 6. Goal Recognition techniques (to infer intentions of opponents)
 7. Game Theoretic Methods
 
+Ours:
+1. Approximate Q-learning
+2. Heuristic search algorithms
+3. Game theory(?)
+> 4. Any moree??? 
+
 ## General Comments
 
 _General comments about the project goes here_
