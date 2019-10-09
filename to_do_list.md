@@ -3,6 +3,7 @@ Iqbal:
 
 Matt:
 * [ ]  Check if all files utilised are labelled in 'Files utilised' at Home
+* [ ] Once we have final feature set to train, insert graph into section 'approach - approx. Q-learning' showing the improvement of the agents over e.g. 1000+ games 
 
 **Part (i) - Program implementation**
 
