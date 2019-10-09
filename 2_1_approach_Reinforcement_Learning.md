@@ -59,7 +59,8 @@ self.epsilonStep = (self.epsilonStart-self.epsilonMin)/self.trainEps
 [Back to top](#table-of-contents)
 
 ### Future improvements  
-A possible future implementation would combine the learning process amongst both agents. Currently, each agent acts (and learns) independently towards their specific objective - capture food or eat enemies. An improved solution 
+A possible future implementation would combine the learning process amongst both agents. Currently, each agent acts (and learns) independently towards their specific objective - capture food or eat enemies. An improved solution would generalise the approach to a multi-agent solution in order for them to work as a team.
+
 [Back to top](#table-of-contents)
 
 
