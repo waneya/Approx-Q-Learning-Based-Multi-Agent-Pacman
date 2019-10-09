@@ -6,6 +6,13 @@
 *  problem feature is intended to address:
 *  Effectiveness of feature in addressing that problem:
 
+## First attempt at running from enemies
+
+# Demo
+
+![1_-_offensive_agent_is_ghost__running_from_enemy_pacman](uploads/1462f1ad37b0b188024a0901a88c6272/1_-_offensive_agent_is_ghost__running_from_enemy_pacman.gif)
+
+
 
 ![2_-_offensive_agent_staying_in_dead_end](uploads/3ade853f2b9a113095f31b273ac19f4a/2_-_offensive_agent_staying_in_dead_end.gif)
 
