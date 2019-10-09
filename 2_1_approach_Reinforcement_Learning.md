@@ -48,14 +48,18 @@ self.epsilonStep = (self.epsilonStart-self.epsilonMin)/self.trainEps
 
 ### Trade-offs  
 #### *Advantages*  
-
+- Reduce size of state space to [Features x Actions]
+- Apply heuristics (features) that we believed would lead to a successful agent
+- Faster convergence than a Deep-Q learning approach
 
 #### *Disadvantages*
+- With this approach, we have to define features based on our understanding of the problem domain. This introduces a risk that we do not specify appropriate features and information about the state space is lost to the learning agent
+- Due to the sparsity of rewards, we had to introduce a heuristics for rewards. Although close to `getScore`, our approximation is not an exact representation of the actual reward. As a result, a learning agent may learn sub-optimal moves. The trade-off is deemed appropriate given the significant time step between each action and reward.
 
 [Back to top](#table-of-contents)
 
 ### Future improvements  
-
+A possible future implementation would combine the learning process amongst both agents. Currently, each agent acts (and learns) independently towards their specific objective - capture food or eat enemies. An improved solution 
 [Back to top](#table-of-contents)
 
 
