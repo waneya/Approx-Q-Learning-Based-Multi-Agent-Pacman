@@ -28,6 +28,10 @@ In the case of
 
 ***Noisy distance:***
 
+- The problem: when should an agent return home after eating food? A heuristic to minimise chance of getting eaten but also maximise score over the entire game
+The mechanism: sqrt(height*width) map < maze distance to food 
+Second mechanism: If there is a lot of food nearby (i.e. connected by 1 square), go back home after eating half of total food
+
 [Back to top](#table-of-contents)
 
 ### Trade-offs  
