@@ -31,6 +31,11 @@ Considers past position states which leads to back and forth movement which atte
 4- Solving 3 by calculating future value only when opponent is in proximity (taken the product of both features and used same weight). Improved problem of 2 as well. A new problem arises. Offensive agent keep moving around nearest Food if an opponent is present. Possible solution is to add a feature that measured distance from nearest food to VisibleGhost as well. while calculating future available actions for each successor, add a penalty to the successor which might lead lead to ghost. 
 (Lead to a possible future weakness of agent moving back and forth)
 
+
+5. Instead of solving above problem first,  added new future to check ratio of available food/nonavaiable food to n-depth. The idea is to favour paths where more food is availble compared to lower food. It became a challenge to adjust weight b/w feature minimumDistanceToFood and this feature, because they are related. Distance to Nearest Food is favoured to solve Pacman confusions. Added chasing scared ghost feature to Offensive agent.
+
+6. To solve problem as specified  in 4 in which opponent is not moving away from food nearest to our agent, added a new feature to measure distance of opponent agent (if visible) to nearest Food, and direct to agent to start moving towards some other random food.
+
 ![8_-_offensive_agent_held__hostage_](uploads/4df8370837b6dee5b20d0def584d44ad/8_-_offensive_agent_held__hostage_.gif)
 
 8. We are red_Look at blue how it is stuck. Our agent avoid such behavior by killing it self as there is no way out
