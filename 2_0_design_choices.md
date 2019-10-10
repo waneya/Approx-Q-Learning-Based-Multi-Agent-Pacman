@@ -2,12 +2,12 @@
 
 ## Considerations
 
-***Generalisation:***
+***Generalisation***
 
-It is important
+*(1) Randomly generated maps*
 
-* Randomly generated maps
-* Variety of opposing agents
+
+*(2) Variety of opposing agents*
 
 Multi-agent problem: 
 
