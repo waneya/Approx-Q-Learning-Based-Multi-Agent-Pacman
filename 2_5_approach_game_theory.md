@@ -16,7 +16,7 @@ First we will consider the beginning of a game from a game theory perspective, w
 Please note, our team's possible actions are represented by the first column, and payoff as the first item in each cell in  the inner cells. And vice-versa for the opposing team in consideration. And note that '?' will represent the outcome of a loss/tie/win, for ease of visual representation.
 
 
-# Score = 0; start of game initialisation
+# Score = 0; at any given point in time in the game
 
 | | **2D** | **1O & 1D**| **2O**|
 | ---- | ----| ---- | --- |
@@ -39,8 +39,7 @@ Assuming equal probabilities of each outcome occurring, which is not necessarily
 | **1O & 1D** | 2, 0.5 | 1.33, 1.33| 1.33, 1.33| 
 |**2O**| 2, 0.5| 1.33, 1.33| 1.33, 1.33| 
 
-
-# Score > 0; time not considered
+# Score > 0; at any given point in time in the game
 
 
 | | **2D** | **1O & 1D**| **2O**|
@@ -49,13 +48,17 @@ Assuming equal probabilities of each outcome occurring, which is not necessarily
 | **1O & 1D** | win, loss | ?, ?| ?, ?| 
 |**2O**| win, loss | ?, ?| ?, ? | 
 
+**Estimated expected numerical payoffs of the above table:**
+
 | | **2D** | **1O & 1D**| **2O**|
 | ---- | ----| ---- | --- |
 | **2D** | 3, 0| 1.33, 1.33| 1.33, 1.33|
 | **1O & 1D** | 3, 0| 1.33, 1.33| 1.33, 1.33| 
 |**2O**| 3, 0| 1.33, 1.33| 1.33, 1.33 | 
 
-# Score < 0; time not considered
+By observing this table, it can be seen that having 2 defensive agents when score = 0 is a dominated strategy. So it is then beneficial to either have 1O & 1D or 2O in order to maximise expected payoff. This relies on the fact that the outcomes are assumed to be of equal probability, however this is not always the case, and is a limitation of this approach.
+
+# Score < 0; at any given point in time in the game
 
 | | **2D** | **1O & 1D**| **2O**|
 | ---- | ----| ---- | --- |
@@ -63,9 +66,23 @@ Assuming equal probabilities of each outcome occurring, which is not necessarily
 | **1O & 1D** | ?, ? | ?, ?| ?, ?| 
 |**2O**| ?, ? | ?, ?| ?, ? | 
 
+**Estimated expected numerical payoffs of the above table:**
+
 | | **2D** | **1O & 1D**| **2O**|
 | ---- | ----| ---- | --- |
 | **2D** | 0, 3|0, 3| 0, 3|
 | **1O & 1D** | 1.33, 1.33| 1.33, 1.33| 1.33, 1.33| 
 |**2O**| 1.33, 1.33| 1.33, 1.33| 1.33, 1.33 |
+
+This forms the inverse of the previous Score > 0, where now our team is losing. It is therefore a dominated strategy to have 2 purely defensive agents once we are losing in score at any given point in time.  This is because the expected payoff of maintaining this strategy is 0 in all action cases of the opposing team. Implementation-wise, what this means, is that if our agents observe that we are losing in score, to maximise payoff, it is advantageous for then to either have 1O & 1D or 2O agent behaviours set. Intuitively this makes sense since there is no possible way to get a better outcome if the agents remain on a defensive position once our team is already losing.
+
+Challenges:
+*  Although it is simple enough, for example, to understand that having 2D is dominated once we are losing, it is a difficult question to then ask which strategy should be taken in cases where 1O & 1D or 2O seem to have the same expected payoff. In reality, 
+
+Possible improvements:
+*  To extend this game theory model and to make it robust, it would be beneficial to find a way to calculate the probable likelihood of each outcome (loss, tie, win) when there are multiple possibilities in a given situation (e.g. tie/win). This would allow for a more accurate measure of expected payoff, although this game of pacman has many turns and such probabilities will differ in each of the very high number of possible states - so this must be approached carefully.
+* Empirically testing or utilising Q-learning may work well to be able to implicitly calculate these probabilities, however a wide range of samples and opposing team agents should be tested to ensure good generalisation.
+* A parameter upon which these game theory tables could be adjusted to is the range of score, e.g. if score = 10, it is less probable that the score will reach 0 than if the score = 100.
+* Another possible dimension to consider as an extension, is that depending on how much food of the opposing enemy has, or our team has, it is rational to then increase or decrease the expected payoff for each strategy taken. For example, if the enemy only has 3 food left in their territory, then it may be more attractive to then set 2O agents on our team, since we would only need to eat 1 pellet to win. However, this is only a constraint example, because we may also have only 3 food pellets left!
+
 
