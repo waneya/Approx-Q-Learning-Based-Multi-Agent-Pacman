@@ -84,8 +84,16 @@ Possible improvements:
 * Another possible dimension to consider as an extension, is that depending on how much food of the opposing enemy has, or our team has, it is rational to then increase or decrease the expected payoff for each strategy taken. For example, if the enemy only has 3 food left in their territory, then it may be more attractive to then set 2O agents on our team, since we would only need to eat 1 pellet to win. However, this is only a constraint example, because we may also have only 3 food pellets left!
 
 
+# Game theory bonus: hostage situation
+
+![10_-_suicide](uploads/f1f1850da4253b64410db5c51cc27221/10_-_suicide.gif)
+
 ![8_-_offensive_agent_held__hostage_](uploads/4df8370837b6dee5b20d0def584d44ad/8_-_offensive_agent_held__hostage_.gif)
 
 In this scenario, it is demonstrated that our defensive agent (orange ghost) is mimicking the movement of the opposing offensive agent. This has some interesting implications. If the opposing agent has no method of escaping this scenario, then it is possible to hold them 'hostage', and effectively reduce the game into a 1-agent game for a period of time. Now, if the opposing team has a static 1O & 1D, then holding this pacman as a hostage could be a dominating position if we assume that e.g. we are already winning. Otherwise, even if we are losing, it is possible to consider the expected future payoff as only increasing (i.e. our score can only increase from now on) - so there is a potential trade-off of fixing the direction of payoff and decreasing the potential variation in score changes henceforth. For example, if we want to have 2O even though this hostage situation is opportune, then the score could increase by a higher amount, but this loses the fixed direction as this could also lead to greater deviation into negative score).
+
+
+
+Note that this situation extends to micro-situations on possibly any point in the map, whereby opposing pacmen and ghosts can be entangled in a back and forth cycle, effectively idling themselves. This can also be apparent alongside the border of territories, whereby a
 
 
