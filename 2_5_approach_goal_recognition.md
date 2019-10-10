@@ -1,4 +1,4 @@
-#Approach 4: Goal recognition (to infer intention of opponenets)
+# Approach 4: Goal recognition (to infer intention of opponenets)
 
 ## Recognising non-visible enemy pacman is eating food
 
