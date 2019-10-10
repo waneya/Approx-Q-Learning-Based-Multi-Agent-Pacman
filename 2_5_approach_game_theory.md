@@ -13,8 +13,8 @@ As this is a game with 2 agents on each team, and we defined offensive and defen
 
 First, let us look at the beginning of a game from a game theory perspective, whereby our decision consists of 1 move at the beginning, of whether to take one of the three actions above. If we 
 
-| header | header | header | header |
+| header | 2D | 1O & 1D | 2O |
 | ------ | ------ | ------ | ------ | 
-| header | cell | cell | cell |
-| header | cell | cell | cell | 
-| header | cell | cell | cell | 
+| 2D | cell | cell | cell |
+| 1O & 1D | cell | cell | cell | 
+| 2O | cell | cell | cell | 
