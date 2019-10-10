@@ -30,7 +30,7 @@ These rewards allowed our agents to learn effectively from an initial implementa
 * positive score increments leading to positive rewards (ignoring negatives); and
 * negative score increments leading to negative rewards (ignoring positives), respectively.
 
-This would ensure that the agents are receiving rewards independently and are not influenced (i.e. misled) by the performance of the other agent, in the case of 1 offensive and 1 defensive agent. Additionally, focusing on the score ensures that agents do not follow misconstrued rewards such as those based on food. For example, if the reward for an offensive agent was eating food, then it could simply greedily eat all the food it can and then die to then repeat this process as this would be an effective method for eating more food - with no real incentive to bring it back home, as this does not contribute to the reward, and it also drops the upper bound of food that can be eaten again.
+This would ensure that the agents are receiving rewards independently and are not influenced (i.e. misled) by the performance of the other agent, in the case of 1 offensive and 1 defensive agent. Additionally, focusing on the score ensures that agents do not follow misconstrued rewards such as those based on food. For example, if the reward for an offensive agent was eating food, then it could simply greedily eat all the food it can and then die to then repeat this process. This would be deemed an effective method for eating more food for an agent - with no real incentive to bring it back home, as this does not contribute to the reward, and it also drops the upper bound of food that can be eaten again.
 
 
 #### Weight vector initialisation
