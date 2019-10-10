@@ -33,6 +33,8 @@ Assuming equal probabilities of each outcome occurring, which is not necessarily
 | **1O & 1D** | 2, 0.5 | 1.33, 1.33| 1.33, 1.33| 
 |**2O**| 2, 0.5| 1.33, 1.33| 1.33, 1.33| 
 
+Under the set of assumptions made, this shows that a pure 2D strategy is dominated, and therefore when score = 0, agents should either be set to 1O & 1D, or 2O to maximise expected future payoffs.
+
 # Score > 0; at any given point in time in the game
 
 
