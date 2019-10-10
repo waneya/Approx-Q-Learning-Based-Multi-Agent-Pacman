@@ -16,4 +16,4 @@ First, let us look at the beginning of a game from a game theory perspective, wh
 | header | header |
 | ------ | ------ |
 | header | ------ | cell | cell |
-| header | ------ || cell | cell | 
+| header | ------ | cell | cell | 
