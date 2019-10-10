@@ -1,14 +1,13 @@
 ## Game Theory
 
-As this is a game with 2 agents on each team, and we defined offensive and defensive agents, a reasonable questions arises of how to set the agents' behaviour, e.g. should we have:
-*  1 defensive & 1 offensive
-* 2 defensive
-* 2 offensive
+As this is a game with 2 agents on each team, and we defined offensive and defensive agents, a reasonable questions arises of how to set the agents' behaviour, e.g. at any given point in time, there is a choice to make, of whether to have the agents set as:
+* 1 defensive & 1 offensive (herein '1D & 1O')
+* 2 defensive (herein '2D')
+* 2 offensive (herein '2O)
 
 First we will consider the beginning of a game from a game theory perspective, whereby our decision consists of 1 move at the beginning, of whether to take one of the three actions above. Then, the case of our score being >0 and <0 will be considered, i.e. if we are winning or losing, respectively, at a given point in time. The motivation for doing this is to consider whether it would be attractive to consider switching strategies within a game as scores differ.
 
 Please note, our team's possible actions are represented by the first column, and payoff as the first item in each cell in  the inner cells. And vice-versa for the opposing team in consideration. And note that '?' will represent the outcome of a loss/tie/win, for ease of visual representation.
-
 
 # Score = 0; at any given point in time in the game
 
