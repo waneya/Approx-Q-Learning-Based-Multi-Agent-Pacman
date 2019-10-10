@@ -32,12 +32,6 @@ At initialisation of the game, each team has 15secs to perform 'registry' comput
 3. Goal recognition techniques (to infer intentions of opponents)
 4. Game theoretic methods
 
-## General Comments
-
-_General comments about the project goes here_
-
-## Comments per topic
-
 ## Files utilised (in addition to files provided by UC Berkeley)
 
 ***myTeam.py:*** the main file that implements agent set-up for the game, i.e., defines how they will behave and play the game. It also includes the approximate q-learning methodology for when the agents are training.
