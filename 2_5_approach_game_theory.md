@@ -15,6 +15,6 @@ First, let us look at the beginning of a game from a game theory perspective, wh
 
 | header | 2D | 1O & 1D | 2O |
 | ------ | ------ | ------ | ------ | 
-| 2D | cell | cell | cell |
-| 1O & 1D | cell | cell | cell | 
-| 2O | cell | cell | cell | 
+| 2D | tie, tie | tie/loss, tie/win| tie/loss, tie/win|
+| 1O & 1D | tie/win, tie/loss | ?, ?| win/loss, win/loss| 
+| 2O | tie/win, tie/loss| win/loss, win/loss| ?, ? | 
