@@ -14,7 +14,7 @@ Possible Improvements:
 * For maximising probability of correctly inferring the intentions of an enemy agent, and the method in which they seek food (to accurately know where they are probably headed next), it is possible to utilise machine learning methods off-policy amongst a range of enemy tactics, mixed with some on-policy tweaking during actual gameplay (as some enemy agent tactics may differ to previously seen samples).
 
 
-# Inferring defensive goal recognition
+# Recognising enemy defensive agent goals
 
 A problem that we've tackled is the case where enemy ghosts are defensive around the centre of the map, leading to an obstruction of our offensive agents. We have attempted to identify when this occurs through features, and in general, e.g. if it occurs near the bottom or top of a map as well. For example, in the scenario below, our offensive red agent gets caught while trying to cross over into enemy territory, and then infers that the enemy will likely be around that area in the future, so it may prefer crossing over the top (or bottom, randomly choosing a food in either section and setting it as the initial goal).
 
