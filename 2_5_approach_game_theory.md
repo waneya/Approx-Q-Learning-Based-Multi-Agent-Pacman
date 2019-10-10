@@ -84,3 +84,8 @@ Possible improvements:
 * Another possible dimension to consider as an extension, is that depending on how much food of the opposing enemy has, or our team has, it is rational to then increase or decrease the expected payoff for each strategy taken. For example, if the enemy only has 3 food left in their territory, then it may be more attractive to then set 2O agents on our team, since we would only need to eat 1 pellet to win. However, this is only a constraint example, because we may also have only 3 food pellets left!
 
 
+![8_-_offensive_agent_held__hostage_](uploads/4df8370837b6dee5b20d0def584d44ad/8_-_offensive_agent_held__hostage_.gif)
+
+In this scenario, it is demonstrated that if our defensive agent 
+
+
