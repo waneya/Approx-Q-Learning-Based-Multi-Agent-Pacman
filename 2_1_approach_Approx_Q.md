@@ -1,4 +1,4 @@
-# AI Method 1 - Approximate Q-Learning
+# Approach 1: Approximate Q-learning
 
 # Table of Contents
 - [Governing Strategy Tree](#governing-strategy-tree)
