@@ -20,15 +20,16 @@ Our initial thoughts were to use a neural network to approximate the Q-value (de
 We implemented [number] features for our offensive, and [number] features for our defensive agent. Each feature was normalised between [0,1] and was scaled by the learnt weight vector. Thus, each Q(s,a) was estimated by a linear sum of each feature and weight. 
 
 #### Reward Shaping
-We recognised early on that the reward would primarily occur late in the game, sometimes only at the terminal state. To expedite the learning process we modified the reward function. For our offensive agent, the reward was:
+We recognised in earlier evolutions of our implementation that the reward would primarily occur late in the game, sometimes only at the terminal state. To expedite the learning process we modified the reward function. For our offensive agent, the reward was:
 `(1 - (foodLeft/self.startFood)) +  self.getScore(gameState)`
 
 Whereas for the defensive, it was:
 `agentsEaten`.
 
-We believed these heuristics best represented the future reward as the score is primarily a function of the number of food eaten (then retrieved). 
+These rewards allowed our agents to learn effectively from an initial implementation. However, ideal rewards for the offensive agent and defensive agents are: positive score increments leading to positive rewards (ignoring negatives), and negative score increments leading to negative rewards (ignoring positives), respectively. This would ensure that the agents are receiving rewards independently and are not influenced (i.e. misled) by the performance of the other agent, in the case of 1 offensive and 1 defensive agent. Additionally, focusing on the score ensures that agents do not follow misconstrued rewards such as those based on food. For example, if the reward for an offensive agent was eating food, then it could simply greedily eat all the food it can and then die to then repeat this process as this would be an effective method for eating more food - with no real incentive to bring it back home, as this does not contribute to the reward, and it also drops the upper bound of food that can be eaten again.
 
-#### Weight Vector Initialisation
+
+#### Weight vector initialisation
 Instead of initialising with a zero weight vector, we used judgement to create initialised values that we believed represented each features importance. This allowed the reinforcement learning to reach optimisation significantly faster. 
 
 #### Training
