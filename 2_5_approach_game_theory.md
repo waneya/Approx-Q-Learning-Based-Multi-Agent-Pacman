@@ -49,6 +49,12 @@ Assuming equal probabilities of each outcome occurring, which is not necessarily
 | **1O & 1D** | win, loss | ?, ?| ?, ?| 
 |**2O**| win, loss | ?, ?| ?, ? | 
 
+| | **2D** | **1O & 1D**| **2O**|
+| ---- | ----| ---- | --- |
+| **2D** | 3, 0| 1.33, 1.33| 1.33, 1.33|
+| **1O & 1D** | 3, 0| 1.33, 1.33| 1.33, 1.33| 
+|**2O**| 3, 0| 1.33, 1.33| 1.33, 1.33 | 
+
 # Score < 0; time not considered
 
 | | **2D** | **1O & 1D**| **2O**|
