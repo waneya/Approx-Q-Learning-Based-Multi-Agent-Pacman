@@ -18,8 +18,8 @@ First we will consider the beginning of a game from a game theory perspective, w
 | | **2D** | **1O & 1D**| **2O**|
 | ---- | ----| ---- | --- |
 | **2D** | tie, tie | tie/loss, tie/win| tie/loss, tie/win|
-| **1O & 1D** | tie/win, tie/loss | ?, ?| win/loss, win/loss| 
-|**2O**| tie/win, tie/loss| win/loss, win/loss| ?, ? | 
+| **1O & 1D** | tie/win, tie/loss | ?, ?| ?, ?| 
+|**2O**| tie/win, tie/loss| ?, ?| ?, ? | 
 
 # Score > 0; time not considered
 
