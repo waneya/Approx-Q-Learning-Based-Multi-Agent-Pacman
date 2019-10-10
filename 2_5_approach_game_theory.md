@@ -1,4 +1,4 @@
-## Game Theory
+## Approach 3: Game theory
 
 As this is a game with 2 agents on each team, and we defined offensive and defensive agents, a reasonable questions arises of how to set the agents' behaviour, e.g. at any given point in time, there is a choice to make, of whether to have the agents set as:
 * 1 defensive & 1 offensive (herein '1D & 1O')
