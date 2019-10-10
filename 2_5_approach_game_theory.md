@@ -71,13 +71,13 @@ By observing this table, it can be seen that having 2 defensive agents when scor
 
 This forms the inverse of the previous Score > 0, where now our team is losing. It is therefore a dominated strategy to have 2 purely defensive agents once we are losing in score at any given point in time.  This is because the expected payoff of maintaining this strategy is 0 in all action cases of the opposing team. Implementation-wise, what this means, is that if our agents observe that we are losing in score, to maximise payoff, it is advantageous for then to either have 1O & 1D or 2O agent behaviours set. Intuitively this makes sense since there is no possible way to get a better outcome if the agents remain on a defensive position once our team is already losing.
 
-Challenges:
+**Challenges experienced:**
 *  Although it is simple enough, for example, to understand that having 2D is dominated once we are losing, it is a difficult question to then ask which strategy should be taken in cases where 1O & 1D or 2O seem to have the same expected payoff. 
 *  We did attempt to test the combinations of agent offensiveness/defensiveness manually through empirical observation of results and replays, however it would be preferable given more time to have a systematic approach for learning and generalisation.
 *  It is difficult to map agent behaviours as purely offensive or defensive, because for example, an agent that is offensive that is making its way to the enemy territory could stumble upon an offensive enemy agent who is in close range - and then a decision question arises of whether to perhaps maximise payoffs by attempting to eat them then return to attempting to eat food, or to just ignore them and prioritise food. This can be observed conversely by defensive agents, e.g. eating close-by food to the border.
 *  Another approximate method for utilising this type of game theory is to consider time and its impact on the payoffs. E.g. when time is almost up, and we are losing, it may be more beneficial to attempt to forego all defense, and set the agents to 2O. This applies inversely to setting to 2D if we are winning by a large margin when the game is almost finished in time.
 
-Possible improvements:
+**Possible improvements:**
 *  To extend this game theory model and to make it robust, it would be beneficial to find a way to calculate the probable likelihood of each outcome (loss, tie, win) when there are multiple possibilities in a given situation (e.g. tie/win). This would allow for a more accurate measure of expected payoff, although this game of pacman has many turns and such probabilities will differ in each of the very high number of possible states - so this must be approached carefully.
 * Empirically testing or utilising Q-learning may work well to be able to implicitly calculate these probabilities, however a wide range of samples and opposing team agents should be tested to ensure good generalisation.
 * A parameter upon which these game theory tables could be adjusted to is the range of score, e.g. if score = 10, it is less probable that the score will reach 0 than if the score = 100.
@@ -87,7 +87,6 @@ Possible improvements:
 ## Game theory bonus: hostage situation
 
 ![10_-_suicide](uploads/f1f1850da4253b64410db5c51cc27221/10_-_suicide.gif)
-
 
 In this scenario, it is demonstrated that our defensive agent (orange ghost) is mimicking the movement of the opposing offensive agent. This has some interesting implications. If the opposing agent has no method of escaping this scenario, then it is possible to hold them 'hostage', and effectively reduce the game into a 1-agent game for a period of time. Now, if the opposing team has a static 1O & 1D, then holding this pacman as a hostage could be a dominating position if we assume that e.g. we are already winning. Otherwise, even if we are losing, it is possible to consider the expected future payoff as only increasing (i.e. our score can only increase from now on) - so there is a potential trade-off of fixing the direction of payoff and decreasing the potential variation in score changes henceforth. For example, if we want to have 2O even though this hostage situation is opportune, then the score could increase by a higher amount, but this loses the fixed direction as this could also lead to greater deviation into negative score).
 
