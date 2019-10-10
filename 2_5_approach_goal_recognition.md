@@ -1,3 +1,4 @@
+Approach 4: Goal recognition (to infer intention of opponenets)
 
 # Recognising non-visible enemy pacman is eating food
 
@@ -24,4 +25,4 @@ Challenges experienced:
 *  Sometimes an offensive agent gets caught on the retry, and so we generalised to get out of vision of the enemy agent before attempting once again. This is also a potentially time-saving and dominating strategy to the case above where our offensive agent simply died (even though it could have possibly avoiding doing so).
 
 Possible improvements:
-* This could be extended to cooperative behaviour with ally agents, because e.g. if our two agents are set to offensive, they could communicate by probabilistically inferring that they are headed to explore a certain region, entering by top or bottom, with probability increasing as they either get closer to different regions of the map and closer to enemy territory before entry.
+* This could be extended to cooperative behaviour with ally agents, because e.g. if our two agents are set to offensive, they could communicate by probabilistically inferring that they are headed to explore a certain region, entering by top or bottom, with probability increasing as they either get closer to different regions of the map and closer to enemy territory before entry. In a 2-agent scenario, this is not necessary, but in an increasingly multi-agent scenario, this would become increasingly important.
