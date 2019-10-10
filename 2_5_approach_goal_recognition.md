@@ -23,6 +23,8 @@ A problem that we've tackled is the case where enemy ghosts are defensive around
 
 Challenges experienced:
 *  Sometimes an offensive agent gets caught on the retry, and so we generalised to get out of vision of the enemy agent before attempting once again. This is also a potentially time-saving and dominating strategy to the case above where our offensive agent simply died (even though it could have possibly avoiding doing so).
+* It is difficult to understand whether an enemy defensive agent will remain in the same location or not after first encountering it there and then leaving visible range. However, a random re-entry position seems to solve this fine. 
 
 Possible improvements:
 * This could be extended to cooperative behaviour with ally agents, because e.g. if our two agents are set to offensive, they could communicate by probabilistically inferring that they are headed to explore a certain region, entering by top or bottom, with probability increasing as they either get closer to different regions of the map and closer to enemy territory before entry. In a 2-agent scenario, this is not necessary, but in an increasingly multi-agent scenario, this would become increasingly important.
+* Coupling the random re-entry location decision with game theory would be complimentary as we wish to maximise offensive agent re-entry success chance, preferably without being revealed to the enemy - and game theory would also aid in an extended multiple turn setting, whereby re-entry locations (e.g. from top, centre, bottom) can be considered as the actions.
