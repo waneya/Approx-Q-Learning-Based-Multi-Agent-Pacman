@@ -2,15 +2,21 @@
 
 ## Considerations
 
-***Generalisation***
+***The need to generalise***
 
-*(1) Randomly generated maps*
+*(1) Randomly generated maps* : because the maps are randomly generated, it cannot be expected that our agents will be playing on the same map or same set of maps. Thus, assuming an infinitely possible number of maps that can act as the battlefield for our agents, this must be considered when making design choices. Therefore, abstract methods must be utilised to abstract away from an individual map to be able to perform well on a variety and additionally, unseen maps.
 
+*(2) Variety of opposing agents* : with similar reasoning to the randomly generated maps, there are a number of opposing agents which we do not know about or may not encounter until the final competition. Therefore, it is important to also generalise to the types of opposing agents that may be encountered, as this will maximise the overall chance of success. 
 
-*(2) Variety of opposing agents*
+***Multi-agent problem***
 
-Multi-agent problem: 
+*(1) A sub-class '2-agent' problem* : in this format of competition, there are only 2 agents per team. This influences the design choices made throughout our implementation as we must think about how these 2 agents should be utilised, and if they should engage in cooperative dynamic behaviour. E.g. they can attempt to communicate and share common knowledge or intentions after learning new information from the map or enemy agents.
 
+*(2) Offensive agents* : 
+
+*(3) Defensive agents* :
+
+*(4) Hybrid (reflexive agents)* :
 
 
 - Design an offensive and defensive agent or generalise to a multi-agent problem?
