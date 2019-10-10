@@ -1,6 +1,4 @@
 
-# Inferring if enemy pacman is heading towards capsule
-
 # Recognising non-visible enemy pacman is eating food
 
 Because of agents being visible within only 5 manhattan distance, it is difficult to accurately distinguish where an agent is located outside of that range. Although a noisy distance is provided, this distance only provides a range of possible positions from an agent inquiring the noisy distance of others - and so, does not indicate which direction the un-seen agent(s) are. 
@@ -15,3 +13,9 @@ Possible Improvements:
 * For future possible improvements, it is possible to mechanically derive a probability-based table of an unseen enemy pacman's position by combining the aforementioned constraint, and noisy distance. For example, noisy distance allows us to know probabilistically, whether an enemy is moving closer, or further away. This, combined with an exact position at a single turn of an enemy pacman, and the constraint of maze distance, can be used to maintain a more accurate probabilistic measure of both distance away from an enemy pacman, and also their likely position. 
 * For maximising probability of correctly inferring the intentions of an enemy agent, and the method in which they seek food (to accurately know where they are probably headed next), it is possible to utilise machine learning methods off-policy amongst a range of enemy tactics, mixed with some on-policy tweaking during actual gameplay (as some enemy agent tactics may differ to previously seen samples).
 
+
+# Inferring defensive goal recognition
+
+A problem that we've tackled is the case where enemy ghosts are defensive around the centre of the map, leading to an obstruction of our offensive agents. We have attempted to identify when this occurs, as well as if it occurs alongside the border at the bottom or top of the map. For example, in the scenario below, 
+
+![11_-_goal_infer_and_switch_to_random_food](uploads/bf306a20590ef6c155a74d72679a98e0/11_-_goal_infer_and_switch_to_random_food.gif)
