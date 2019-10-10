@@ -86,6 +86,6 @@ Possible improvements:
 
 ![8_-_offensive_agent_held__hostage_](uploads/4df8370837b6dee5b20d0def584d44ad/8_-_offensive_agent_held__hostage_.gif)
 
-In this scenario, it is demonstrated that if our defensive agent 
+In this scenario, it is demonstrated that our defensive agent (orange ghost) is mimicking the movement of the opposing offensive agent. This has some interesting implications. If the opposing agent has no method of escaping this scenario, then it is possible to hold them 'hostage', and effectively reduce the game into a 1-agent game for a period of time. Now, if the opposing team has a static 1O & 1D, then holding this pacman as a hostage could be a dominating position if we assume that e.g. we are already winning. Otherwise, even if we are losing, it is possible to consider the expected future payoff as only increasing (i.e. our score can only increase from now on) - so there is a potential trade-off of fixing the direction of payoff and decreasing the potential variation in score changes henceforth. For example, if we want to have 2O even though this hostage situation is opportune, then the score could increase by a higher amount, but this loses the fixed direction as this could also lead to greater deviation into negative score).
 
 
