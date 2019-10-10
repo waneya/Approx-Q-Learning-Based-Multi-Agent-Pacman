@@ -35,4 +35,9 @@ Please note, our team's possible actions are represented by the first column, an
 
 Please note, our team's possible actions are represented by the first column, and payoff as the first item in each cell in  the inner cells.
 
+| | **2D** | **1O & 1D**| **2O**|
+| ---- | ----| ---- | --- |
+| **2D** | loss, win | loss, win| loss, win |
+| **1O & 1D** | ?, ? | ?, ?| ?, ?| 
+|**2O**| ?, ? | ?, ?| ?, ? | 
 
