@@ -17,4 +17,4 @@ First, let us look at the beginning of a game from a game theory perspective, wh
 | ---- | ----| ---- | --- |
 | **2D** | tie, tie | tie/loss, tie/win| tie/loss, tie/win|
 | **1O & 1D** | tie/win, tie/loss | ?, ?| win/loss, win/loss| 
-|** 2O **| tie/win, tie/loss| win/loss, win/loss| ?, ? | 
+|**2O**| tie/win, tie/loss| win/loss, win/loss| ?, ? | 
