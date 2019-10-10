@@ -43,7 +43,7 @@ Under the set of assumptions made, this shows that a pure 2D strategy is dominat
 | **1O & 1D** | win, loss | ?, ?| ?, ?| 
 |**2O**| win, loss | ?, ?| ?, ? | 
 
-**Estimated expected numerical payoffs of the above table:**
+**Estimated expected numerical payoffs of the table above:**
 
 | | **2D** | **1O & 1D**| **2O**|
 | ---- | ----| ---- | --- |
@@ -61,7 +61,7 @@ By observing this table, it can be seen that having 2 defensive agents when scor
 | **1O & 1D** | ?, ? | ?, ?| ?, ?| 
 |**2O**| ?, ? | ?, ?| ?, ? | 
 
-**Estimated expected numerical payoffs of the above table:**
+**Estimated expected numerical payoffs of the table above:**
 
 | | **2D** | **1O & 1D**| **2O**|
 | ---- | ----| ---- | --- |
