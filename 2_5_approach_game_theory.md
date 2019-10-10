@@ -1,4 +1,4 @@
-## Approach 3: Game theory
+# Approach 3: Game theory
 
 As this is a game with 2 agents on each team, and we defined offensive and defensive agents, a reasonable questions arises of how to set the agents' behaviour, e.g. at any given point in time, there is a choice to make, of whether to have the agents set as:
 * 1 defensive & 1 offensive (herein '1D & 1O')
@@ -9,7 +9,7 @@ First we will consider the beginning of a game from a game theory perspective, w
 
 Please note, our team's possible actions are represented by the first column, and payoff as the first item in each cell in  the inner cells. And vice-versa for the opposing team in consideration. And note that '?' will represent the outcome of a loss/tie/win, for ease of visual representation.
 
-# Score = 0; at any given point in time in the game
+## Score = 0; at any given point in time in the game
 
 | | **2D** | **1O & 1D**| **2O**|
 | ---- | ----| ---- | --- |
@@ -34,7 +34,7 @@ Assuming equal probabilities of each outcome occurring, which is not necessarily
 
 Under the set of assumptions made, this shows that a pure 2D strategy is dominated, and therefore when score = 0, agents should either be set to 1O & 1D, or 2O to maximise expected future payoffs.
 
-# Score > 0; at any given point in time in the game
+## Score > 0; at any given point in time in the game
 
 
 | | **2D** | **1O & 1D**| **2O**|
@@ -53,7 +53,7 @@ Under the set of assumptions made, this shows that a pure 2D strategy is dominat
 
 By observing this table, it can be seen that having 2 defensive agents when score = 0 is a dominated strategy. So it is then beneficial to either have 1O & 1D or 2O in order to maximise expected payoff. This relies on the fact that the outcomes are assumed to be of equal probability, however this is not always the case, and is a limitation of this approach.
 
-# Score < 0; at any given point in time in the game
+## Score < 0; at any given point in time in the game
 
 | | **2D** | **1O & 1D**| **2O**|
 | ---- | ----| ---- | --- |
@@ -84,7 +84,7 @@ Possible improvements:
 * Another possible dimension to consider as an extension, is that depending on how much food of the opposing enemy has, or our team has, it is rational to then increase or decrease the expected payoff for each strategy taken. For example, if the enemy only has 3 food left in their territory, then it may be more attractive to then set 2O agents on our team, since we would only need to eat 1 pellet to win. However, this is only a constraint example, because we may also have only 3 food pellets left!
 
 
-# Game theory bonus: hostage situation
+## Game theory bonus: hostage situation
 
 ![10_-_suicide](uploads/f1f1850da4253b64410db5c51cc27221/10_-_suicide.gif)
 
