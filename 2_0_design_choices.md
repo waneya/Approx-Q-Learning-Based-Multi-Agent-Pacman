@@ -23,7 +23,7 @@ At initialisation of the game, each team has 15secs to perform 'registry' comput
 
 *(3) Defensive agents* : to be able to maintain a positive score, or to avoid losing all pellets, defensive behaviour is necessary to either eliminate or stall enemy agents from cashing in food pellets. 
 
-*(4) Hybrid (reflexive agents)* : as the agents are not restricted to a purely defensive nor offensive behaviour pattern, there is a design choice consideration of whether to attempt to implement this. 
+*(4) Hybrid (reflexive) agents* : as the agents are not restricted to a purely defensive nor offensive behaviour pattern, there is a design choice consideration of whether to attempt to implement this. 
 
 ## Techniques
 
