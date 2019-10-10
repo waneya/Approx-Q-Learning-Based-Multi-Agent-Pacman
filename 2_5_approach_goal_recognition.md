@@ -16,6 +16,12 @@ Possible Improvements:
 
 # Inferring defensive goal recognition
 
-A problem that we've tackled is the case where enemy ghosts are defensive around the centre of the map, leading to an obstruction of our offensive agents. We have attempted to identify when this occurs, as well as if it occurs alongside the border at the bottom or top of the map. For example, in the scenario below, 
+A problem that we've tackled is the case where enemy ghosts are defensive around the centre of the map, leading to an obstruction of our offensive agents. We have attempted to identify when this occurs through features, and in general, e.g. if it occurs near the bottom or top of a map as well. For example, in the scenario below, our offensive red agent gets caught while trying to cross over into enemy territory, and then infers that the enemy will likely be around that area in the future, so it may prefer crossing over the top (or bottom, randomly choosing a food in either section and setting it as the initial goal).
 
 ![11_-_goal_infer_and_switch_to_random_food](uploads/bf306a20590ef6c155a74d72679a98e0/11_-_goal_infer_and_switch_to_random_food.gif)
+
+Challenges experienced:
+*  Sometimes an offensive agent gets caught on the retry, and so we generalised to get out of vision of the enemy agent before attempting once again. This is also a potentially time-saving and dominating strategy to the case above where our offensive agent simply died (even though it could have possibly avoiding doing so).
+
+Possible improvements:
+* This could be extended to cooperative behaviour with ally agents, because e.g. if our two agents are set to offensive, they could communicate by probabilistically inferring that they are headed to explore a certain region, entering by top or bottom, with probability increasing as they either get closer to different regions of the map and closer to enemy territory before entry.
