@@ -42,6 +42,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 | First body part | Second cell  |
 | Second line     | foo          |
 
-----
+Evolution| Date |Position|Number of Teams|Percentile |Points	|Win	|Tie	|Lost	|TOTAL	|FAILED|	Score Balance|
+|--------|---|---|---|---|---|---|---|---|---|---|---|
+||11/10/2019|17|40|0.425|136|44|4|30|78|0|-34|
 
 [Previous Page](/3_approach_evolution)| [Next Page](/4_conclusion)
