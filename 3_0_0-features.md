@@ -3,20 +3,20 @@
 ### Offensive features
 
 deadEndWithActiveGhostNearbyFeature
-{1-3} stepsFromEnemyAgent1
-{1-3} stepsFromEnemyAgent2
-isSuccessorCloserToChoosenPoint
-closenessToOptimizedFood
-ActionsAvailableActiveGhostNearbyFeature
-foodEaten
-capsuleEatenWithEnemyNearBy
+* {1-3} stepsFromEnemyAgent1
+* {1-3} stepsFromEnemyAgent2
+* isSuccessorCloserToChoosenPoint
+* closenessToOptimizedFood
+* ActionsAvailableActiveGhostNearbyFeature
+* foodEaten
+* capsuleEatenWithEnemyNearBy
 
 ### Defensive features
 
-becomesPacman
-isSuccessorCloserToChosenPoint
-{1-3} stepsFromEnemyAgent1
-{1-3} stepsFromEnemyAgent2
+* becomesPacman
+* isSuccessorCloserToChosenPoint
+* {1-3} stepsFromEnemyAgent1
+* {1-3} stepsFromEnemyAgent2
 
 
 ***Please note that, for clarity, the agents in the demos will be referenced by their respective colour - i.e. red & orange for the RED team, blue & teal for the BLUE team. Our agents may switch from either team throughout each video, but will be identified under the respective demo.***
