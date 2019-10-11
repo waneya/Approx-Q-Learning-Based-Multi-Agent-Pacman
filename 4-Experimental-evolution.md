@@ -44,23 +44,6 @@ Demo description
 |-----------------|:-------------|
 | First body part | Second cell  |
 | Second line     | foo          |
-## My First Agent - Evolution 1 | Competition results: Position - X/X | Percentile - X%
-----
-
-Description
-
-### Evolution 1 Demo
-
-![Demo 1](demo1.gif)
-
-Demo description
-
-#### Strategy summary
-
-| Pros | Cons |
-|-----------------|:-------------|
-| First body part | Second cell  |
-| Second line     | foo          |
 
 ## Evolution 3 | Competition results: Position - X/X | Percentile - X%
 ----
