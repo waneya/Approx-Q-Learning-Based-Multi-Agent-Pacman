@@ -2,7 +2,7 @@
 
 ### Offensive features
 
-deadEndWithActiveGhostNearbyFeature
+* deadEndWithActiveGhostNearbyFeature
 * {1-3} stepsFromEnemyAgent1
 * {1-3} stepsFromEnemyAgent2
 * isSuccessorCloserToChoosenPoint
