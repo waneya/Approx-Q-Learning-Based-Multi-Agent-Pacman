@@ -2,7 +2,7 @@
 
 You can include screenshots of precompetition results and animated gifs, to showcase the evolution of your agents.
 
-Evolution| Percentile |Position|No. teams|Date|Points	|Win	|Tie	|Lost	|TOTAL	|FAILED|	Score balance|
+Evolution| Percentile |Date|Position|No. teams|Points	|Win	|Tie	|Lost	|TOTAL	|FAILED|	Score balance|
 |--------|---|---|---|---|---|---|---|---|---|---|---|
 ||0.425|11/10/2019|17|40|136|44|4|30|78|0|-34|
 ||0.18|09/10/2019|6|33|139|43|10|11|64|0|225|
