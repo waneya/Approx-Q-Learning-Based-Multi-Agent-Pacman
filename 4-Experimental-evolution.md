@@ -16,8 +16,6 @@ Description
 
 ### Evolution 1 Demo
 
-![Demo 1](demo1.gif)
-
 Demo description
 
 #### Strategy summary
@@ -33,8 +31,6 @@ Demo description
 Description
 
 ### Evolution 2 Demo
-
-![Demo 1](demo1.gif)
 
 Demo description
 
@@ -52,8 +48,6 @@ Description
 
 ### Evolution 3 Demo
 
-![Demo 1](demo1.gif)
-
 Demo description
 
 #### Strategy summary
@@ -69,8 +63,6 @@ Demo description
 Description
 
 ### Evolution 4 Demo
-
-![Demo 1](demo1.gif)
 
 Demo description
 
