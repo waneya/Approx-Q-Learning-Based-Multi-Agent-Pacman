@@ -45,5 +45,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Evolution| Date |Position|Number of Teams|Percentile |Points	|Win	|Tie	|Lost	|TOTAL	|FAILED|	Score Balance|
 |--------|---|---|---|---|---|---|---|---|---|---|---|
 ||11/10/2019|17|40|0.425|136|44|4|30|78|0|-34|
+||09/10/2019|6|33|0.18|139|43|10|11|64|0|225|
+||08/10/2019|24|29|0.83|42|14|0|42|56|39|-66|
+
+
 
 [Previous Page](/3_approach_evolution)| [Next Page](/4_conclusion)
