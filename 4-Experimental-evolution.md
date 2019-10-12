@@ -49,6 +49,9 @@ Problem: On 8th October tournamnet we found out that our offensive agent is cont
 Solution: We figured out that getting number of actions available to a depth of n with n>8 is causing this problem. This is an important feature to find out dead ends and avoid pacman falling into it when being chased by enemy agent. We have rewritten an efficient algorithm to find out this depth using IDS. With the new version we can work on n>50 and time limit still not exceed.
 
 
+Between 8th and 11th October we invested our time heavily on making offensive agent cross the border to enemy territory specially when there are only few entry points. We also invested our time to avoid the back and forth movement of the pacman. The solution to both the problem was randomness.( will explain more later..............)
+
+
 Problem: (during 11th October) We have added a feature in which agent self kill itself when it is stuck between and enemy ghost agent and wall. The enemy is not killing us and the offensive pacman remains at halt. We have found out that the feature was not working correctly and agent is killing itself randomly. The prooblem is shown is the replay below at around time 600-500.
 [Cheeky-Pacmen_vs_staff_team_super_RANDOM4214.replay](uploads/83034c46a0d216eacd086f4e97bd995e/Cheeky-Pacmen_vs_staff_team_super_RANDOM4214.replay).
 
