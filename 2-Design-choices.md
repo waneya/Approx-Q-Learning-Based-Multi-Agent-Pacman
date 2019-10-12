@@ -43,6 +43,11 @@ At initialisation of the game, each team has 15secs to perform 'registry' comput
 
 ## Offense
 
+1. Detection of a chase by an agent. Method used is isAgentChasingAhent(self, chasingAgentIndex, chasedAgentIndex). This method determines if an agent is being chased by another by considering the distances in three consecutive game states. If an enemy ghost is chasing, the offensive agent will try to approach a capsule if available. If no capsule is available the agent will try to return home while eating the food on the way.
+
+The attched replay clearly demonstrates this technique:
+[replay-0](uploads/bcab2c8cd615255eaea034f5e7450f2d/replay-0)
+
 | Consideration | Function                   |
 | ------------- | -------------------------- |
 | Eating food   | getFood(self, gameState)   |  
