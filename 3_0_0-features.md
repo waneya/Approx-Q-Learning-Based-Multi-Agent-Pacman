@@ -59,7 +59,8 @@ Inspired with success of 4, we added new future to check ratio of available food
 
 ![8_-_offensive_agent_held__hostage_](uploads/4df8370837b6dee5b20d0def584d44ad/8_-_offensive_agent_held__hostage_.gif)
 
-8. We are red_Look at blue how it is stuck. Our agent avoid such behavior by killing it self as there is no way out
+To avoid such halting of food collection. there are two possibilities. First is to never let pacman go into such a situation. However it is very difficult to avoid. So we added a logic that detects if our agent is trapped b/w wall and enemy if it remains trapped for six states, it will kill itself by rushing into enemy. This atleast avoids complete halt of food collection. Between 350-250 in below replay our red agent kills itself[CahllengeReplay_Offensive](uploads/401c3eec83b2eb3d99748ee17cc99380/CahllengeReplay_Offensive)
+
 
 
 # Normalisation
