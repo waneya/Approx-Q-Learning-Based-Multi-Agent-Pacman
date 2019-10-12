@@ -17,14 +17,14 @@ In order to eliminate the need for a large Q-table, and scale our solution, we i
 Our initial thoughts were to use a neural network to approximate the Q-value (deep Q networks), however we deemed that the time frame of the project bounded our ability to fully implement this methodology. As an alternative, we opted for the aforementioned approach. 
 
 ### Application  
-We implemented [number] features for our offensive, and [number] features for our defensive agent. Each feature was normalised between [0,1] and was scaled by the learnt weight vector. Thus, each Q(s,a) was estimated by a linear sum of each feature and weight. 
+We implemented 22 features for our offensive, and 18 features for our defensive agent. Each feature was normalised to a binary [0,1] and was scaled by the learnt weight vector. Thus, each Q(s,a) was estimated by a linear sum of each feature and weight.
 
 #### Reward Shaping
 We recognised in earlier evolutions of our implementation that the reward would primarily occur late in the game, sometimes only at the terminal state. To expedite the learning process we modified the reward function. For our offensive agent, the reward was:
-`(1 - (foodLeft/self.startFood)) +  self.getScore(gameState)`
+`FoodLeft/StartingFood + Score`
 
 Whereas for the defensive, it was:
-`agentsEaten`.
+`AgentsEaten`.
 
 These rewards allowed our agents to learn effectively from an initial implementation. However, ideal rewards for the offensive agent and defensive agents are: 
 * positive score increments leading to positive rewards (ignoring negatives); and
@@ -47,15 +47,16 @@ self.epsilonStart = 1.0
 self.epsilonMin = 0.01  
 self.epsilonStep = (self.epsilonStart-self.epsilonMin)/self.trainEps
 ```
+Training took place over the course of 1,000 games, in an offline setting.  Further to this initial training phase, the agent training was enabled during online tournament games to improve its competitiveness against other agents. 
 
 ### Advantages of this approach
-- Reduce size of state space to [Features x Actions]
-- Apply heuristics (features) that we believed would lead to a successful agent
-- Faster convergence than a Deep-Q learning approach
+- Significantly reduced the size of state space to [Features x Actions].
+- Enabled up to apply heuristics (features) that we believed would lead to a successful agent.
+- Faster convergence than a Deep-Q learning approach.
 
 ### Challenges experienced
-- With this approach, we have to define features based on our understanding of the problem domain. This introduces a risk that we do not specify appropriate features and information about the state space is lost to the learning agent
-- Due to the sparsity of rewards, we had to introduce a heuristics for rewards. Although close to `getScore`, our approximation is not an exact representation of the actual reward. As a result, a learning agent may learn sub-optimal moves. The trade-off is deemed appropriate given the significant time step between each action and reward.
+- With this approach, we had to define features based on our understanding of the problem domain. This introduced a risk that we did not specify appropriate features and information about the state space, impacting the agents' ability to learn.
+- Due to the sparsity of rewards, we had to introduce heuristics for each reward. Although close to `getScore`, our approximation is not an exact representation of the actual reward. As a result, the learning agent may learn sub-optimal moves. The trade-off is deemed appropriate given the significant time step between each action and reward.
 
 ### Future improvements
 A possible future implementation would combine the learning process amongst both agents. Currently, each agent acts (and learns) independently towards their specific objective - capture food or eat enemies. An improved solution would generalise the approach to a multi-agent solution in order for them to work as a team.
