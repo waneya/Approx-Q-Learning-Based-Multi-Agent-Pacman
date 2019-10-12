@@ -14,7 +14,7 @@ A pitfall of the first feature is demonstrated here - our Red offensive agent en
 
 
 
-3- Possible solution of 1 by adding future available actions as a feature. This did not worked as expected. We found it difficult to favour paths closer to food or paths with more action.  Resultantly pacman remained confused as to go where. This confusion is clearly eveident in attached replay (red agent) from 1100-1000 [3_replay-Problem](uploads/91cb0bffcb7f3812888045b7d05c7379/3_replay-Problem)
+3- A possible solution was to add a feature which assessed the number of future actions available. This did not worked as expected. We found it difficult to favour paths closer to food or paths with more possible actions. As a result the agent remained confused as to go where. This confusion is clearly evident in the attached replay (red agent) from 1100-1000 [3_replay-Problem](uploads/91cb0bffcb7f3812888045b7d05c7379/3_replay-Problem)
 
 
 ![4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food](uploads/1fc4b3b072d59730c30404a1fd70ea0b/4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food.gif)
