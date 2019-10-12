@@ -48,6 +48,11 @@ At initialisation of the game, each team has 15secs to perform 'registry' comput
 The attched replay clearly demonstrates this technique:
 [replay-0](uploads/bcab2c8cd615255eaea034f5e7450f2d/replay-0)
 
+2. One of the biggest challenge for the offensive agent is to break through the border and enter the enemy teritory especially when the number of entry points are few and most of them are blocked by walls. The approach is using random points at home border. If our agent fails to enter the enemy teritory from a point because it is protected by enemy agent, it changes its path randomly and try to enter enemy teritory from a different point. After failing to enter from the center it tries to enter from top at time 975 and broken into enemy teritory successfully. At around 820 another feature is demonstrated and  our agent also avoids dead end [instead of going down in the column to food) it prefers to go up to avoid trapping in the dead end ( the method is detecting dead tunnels (path with no exit) [method: isSuccessorTunnel( successorPosition, gameState) that uses IDF to detect dead tunnels (with or without Food,) and the logic is: if enemy is nearby it will avoid dead tunnel  even if it has food), if the enemy is not nearby it may try 2 go to tunnel and collect food, if there is no food it will never go to that path. This is demonstrated at 820, going down leads to dead tunnel) 
+
+[replay-0](uploads/9aede4c576242d0caa997bec838c983e/replay-0)
+
+
 | Consideration | Function                   |
 | ------------- | -------------------------- |
 | Eating food   | getFood(self, gameState)   |  
