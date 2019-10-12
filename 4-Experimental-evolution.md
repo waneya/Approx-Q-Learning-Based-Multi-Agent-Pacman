@@ -59,7 +59,7 @@ To avoid such halting of food collection. there are two possibilities. First is 
 |5|9%|12/10/2019|4|47|203|64|11|17|92|0|447|
 
 
-## Evolution 1 | Competition results: Position - X/X | Percentile - X%
+## Evolution 1 | Competition results: Position - 13/23 | Percentile - 54%
 ----
 
 On 7th October we found out that our agent is entering into the dead ends and getting killed.
@@ -77,7 +77,7 @@ between 1000-800 against staff super team (our agent is red) entering dead end.[
 | First body part | Second cell  |
 | Second line     | foo          |
 
-## Evolution 2 | Competition results: Position - X/X | Percentile - X%
+## Evolution 2 | Competition results: Position - 24/29 | Percentile - 83%
 ----
 
 During the 8th October tournament we found out that our offensive agent was continuously exceeding the time limit to make a move and crashing.
@@ -95,7 +95,7 @@ We figured out that getting number of actions available to a depth of n with n>8
 | First body part | Second cell  |
 | Second line     | foo          |
 
-## Evolution 3 | Competition results: Position - X/X | Percentile - X%
+## Evolution 3 | Competition results: Position - 6/33 | Percentile - 18%
 ----
 
 We focused on optimising the entry point of the agent. We also focused on eliminating any back and forth repetitions. The solution to both problems was randomness.( will explain more later..............)
@@ -111,7 +111,7 @@ Demo description
 | First body part | Second cell  |
 | Second line     | foo          |
 
-## Evolution 4 | Competition results: Position - X/X | Percentile - X%
+## Evolution 4 | Competition results: Position - 17/40 | Percentile - 42%
 ----
 
 During 11th October We have added a feature in which agent would kill itself when stuck between and enemy ghost agent and wall. Superior agents would trap our agent and remove any ability to play the game. We found out that the feature was not working correctly and agent is killing itself randomly. The problem is shown is the replay below at around time 600-500.
@@ -129,7 +129,7 @@ Demo description
 | First body part | Second cell  |
 | Second line     | foo          |
 
-## Evolution 5 | Competition results: Position - X/X | Percentile - X%
+## Evolution 5 | Competition results: Position - 4/47 | Percentile - 9%
 ----
 
 On 12th October the agent would return home after eating one-third food. In the problem below against staff team super and top, our team lost because the agnet collected enough food but did not focus on returning home when the time was running out.
