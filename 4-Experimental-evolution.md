@@ -14,7 +14,7 @@ Experimental evolution, along with associated replays are illustrated below. We 
 ## Evolution 1 | Competition results: Position - 13/23 | Percentile - 54%
 ----
 
-On 7th October we found out that our agent was entering into the dead ends and getting killed.
+On 7th October we found out that our agent was entering into the dead ends and getting killed. This was primarily due to the fact that we did not implement any 'look ahead' features. As a result, the learning process assigned a high priority to following (or escaping) enemy agents, as opposed to finding the optimal path. As identified earlier, this was one of the pitfalls with approximate Q-learning - if we did not implement effective features, the learning process would skew towards sub-optimal states.
 
 To solve this we have added a feature to check number of available actions of a successor node, and avoid entering a position that limited the number of actions available.
 
