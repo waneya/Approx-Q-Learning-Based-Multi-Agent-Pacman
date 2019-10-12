@@ -41,13 +41,10 @@ A pitfall of the first feature is demonstrated here. Our Red offensive while max
 
 ![2_-_offensive_agent_staying_in_dead_end](uploads/3ade853f2b9a113095f31b273ac19f4a/2_-_offensive_agent_staying_in_dead_end.gif)
 
-Problem with 1...leading to dead ends (THIS PROBLEM IS DISPLAYED IN REPLAY ABOVE. REPLAY BELOW SHOWS NOTHING, PLEASE DELETE IT)
 
-![3_-_offensive_agent_stuck_in_2_position_cycle](uploads/30e578e5b256df3ae8eec86bfcf2f135/3_-_offensive_agent_stuck_in_2_position_cycle.gif)
 
-3- Possible solution of 1 by adding future available actions as a feature... caused further problem of back-forth movement
-Iterative depth search - Attempting to maximise sum of possible future actions 7 steps ahead. 
-Considers past position states which leads to back and forth movement which attempts to maximise
+3- Possible solution of 1 by adding future available actions as a feature... (DETAILS TO THIS ALONG WITH ITS REPLAY IS PRESENTED IN OFFENSIVE DESIGN CHOICE 2 (second one) and DESIGN CHOICE 3 ALONG WITH REPLAYS. PLEASE TAKE IT FROM THERE).  caused further problem of back-forth movement
+
 
 ![4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food](uploads/1fc4b3b072d59730c30404a1fd70ea0b/4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food.gif)
 
