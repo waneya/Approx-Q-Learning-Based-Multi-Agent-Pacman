@@ -2,13 +2,13 @@ Experimental evolution, along with associated replays are illustrated below. Aft
 
 ## Offensive agent - fleeing from enemy ghost, (and pacman!)
 
-Our agent is the blue offensive agent. Our first attempt to stop our offensive agent from dying to enemy agents was to add a feature of maze distance to attempt to maximise it from an encountered enemy. 
+Our agent is the blue offensive agent. Our first attempt to stop our offensive agent from being eaten by enemy agents was to add a feature to maximise the maze distance from an encountered enemy. 
 
 # Demo
 
 ![1_-_offensive_agent_is_ghost__running_from_enemy_pacman](uploads/1462f1ad37b0b188024a0901a88c6272/1_-_offensive_agent_is_ghost__running_from_enemy_pacman.gif)
 
-A pitfall of the first feature is demonstrated here. Our Red offensive while maximizing the distance enters in dead end and get caught by enemy agents. 
+A pitfall of the first feature is demonstrated here - our Red offensive agent enters a dead end and is caught by the enemy agent. 
 
 ![2_-_offensive_agent_staying_in_dead_end](uploads/3ade853f2b9a113095f31b273ac19f4a/2_-_offensive_agent_staying_in_dead_end.gif)
 
