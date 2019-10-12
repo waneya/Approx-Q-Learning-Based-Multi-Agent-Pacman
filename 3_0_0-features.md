@@ -55,7 +55,7 @@ Inspired with success of 4, we added new future to check ratio of available food
 
 5.  After that we added a feature to chasing scared ghost by Defensive agent. (We also added it to offensive agent when it is in home teritory Later on we found experimentally that this feature is causing offensive agent to forget its actual work of collecting food and focus on eating enemies in home territory. Hence we removed it). This feature can be seen in replay below from 500-300[5-replay-OffensiveAgentCanChaseScaredOpponents](uploads/e0d9b51713f67a7b2f5afa1c02d32bc4/5-replay-OffensiveAgentCanChaseScaredOpponents)
 
-6. To solve problem as specified  in 4 in which opponent is not moving away from food nearest to our agent, added a new feature to measure distance of opponent agent (if visible) to nearest Food, and direct to agent to start moving towards some other random food.
+6. We have observed a behaviour as shown below. Our offensive blue agent is trapped b/w wall and enemy and food collection is halted.
 
 ![8_-_offensive_agent_held__hostage_](uploads/4df8370837b6dee5b20d0def584d44ad/8_-_offensive_agent_held__hostage_.gif)
 
