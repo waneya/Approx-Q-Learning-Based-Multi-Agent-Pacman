@@ -1,3 +1,5 @@
+Upto 6 experimental evolution given below we worked offline and did not participate actively in tournaments logs and replays collection. Experimental evolution during this along with associated replays is given below. Our these 6 features we were able to beat staff_medium_team and occassionally top (rarely super team). Later on From 7th October we continuously monitored our agent and improved it from replays available from tournaments or staff_teams. This is also presented after these 6 experimental evolutions.
+
 ## Offensive agent - fleeing from enemy ghost, (and pacman!)
 
 Our agent is the blue offensive agent. Our first attempt at attempting to stop our offensive agent from dying to enemy agents was to add a feature of maze distance to attempt to maximise it from an encountered enemy. 
