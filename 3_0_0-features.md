@@ -41,7 +41,7 @@ A pitfall of the first feature is demonstrated here. Our Red offensive while max
 
 ![2_-_offensive_agent_staying_in_dead_end](uploads/3ade853f2b9a113095f31b273ac19f4a/2_-_offensive_agent_staying_in_dead_end.gif)
 
-Problem with 1...leading to dead ends
+Problem with 1...leading to dead ends (THIS PROBLEM IS DISPLAYED IN REPLAY ABOVE. REPLAY BELOW SHOWS NOTHING, PLEASE DELETE IT)
 
 ![3_-_offensive_agent_stuck_in_2_position_cycle](uploads/30e578e5b256df3ae8eec86bfcf2f135/3_-_offensive_agent_stuck_in_2_position_cycle.gif)
 
