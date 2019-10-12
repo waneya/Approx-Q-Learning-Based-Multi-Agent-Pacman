@@ -1,7 +1,7 @@
 # UoM COMP90054 Contest Project
 
-- [1. Home and Introduction](/home)
-- [2. Design Choices (Offense/Defense)](/2_0_design_choices)
+- [1. Home and Introduction](/Home)
+- [2. Design Choices (Offense/Defense)](/2 Design Choices)
     - [2.1 Approach Foo](/2_1_approach)
     - [2.2 Approach FoO](/2_2_approach)
     - [2.3 Approach FOo](/2_3_approach)
