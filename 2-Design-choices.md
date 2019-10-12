@@ -7,7 +7,7 @@
 To score, an agent must return food pellets back to home territory without dying. To win, the team must retain a score of >0 by time 0. These factors influence implementation decisions in the direction of maximising the probability of winning against opposing teams, and has various implications that are discussed in further sections of this wiki.
 
 ***Computation time***
-At initialisation of the game, each team has 15secs to perform 'registry' computations, and then each turn thereafter allows for 1sec of computation. After 3 warnings of exceeding 1sec, or a single move >3sec, a team is disqualified. This places quite a hard margin on computation time, as each agent has 300 moves, i.e. 600 moves per team, and so there is not much leniency for over-computation. Therefore, calculations and techniques utilised must consider this as a limiting constraint, and be efficient in the method of calculation as well as scalable to be able to generalise to all states.
+At initialisation of the game, each team has 15secs to perform 'registry' computations, and then each turn thereafter allows for 1sec of computation. After 3 warnings of exceeding 1sec, or a single move >3sec, a team is disqualified. This places quite a hard margin on computation time, as each agent has 300 moves, i.e. 600 moves per team, and so there is little leniency for over-computation. Therefore, calculations and techniques utilised must consider this as a limiting constraint, and be efficient in the method of calculation as well as scalable to be able to generalise to all states.
 
 ***The need to generalise***
 
