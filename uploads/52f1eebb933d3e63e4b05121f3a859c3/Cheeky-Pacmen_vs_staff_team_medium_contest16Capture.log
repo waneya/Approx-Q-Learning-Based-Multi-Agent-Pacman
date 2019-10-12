@@ -1,0 +1,23 @@
+
+Red team teams/Cheeky-Pacmen/myTeam.py with {}:
+teams/Cheeky-Pacmen/myTeam.py
+Loading Team: teams/Cheeky-Pacmen/myTeam.py
+Arguments: {}
+[  450   300   250   100   450   300   250   100 -1000  -300  -250  -100
+ -1000  -300  -250  -100   320    20  -350    40   200]
+[-2000    40   400   300   250   100   400   300   250   100  -400  -300
+  -250  -100  -400  -300  -250  -100]
+
+Blue team teams/staff_team_medium/myTeam.py with {}:
+teams/staff_team_medium/myTeam.py
+Loading Team: teams/staff_team_medium/myTeam.py
+Arguments: {}
+Blue team starts
+Agent 0 took too long to make a move! This is warning 1
+Agent 0 took too long to make a move! This is warning 2
+Agent 0 took too long to make a move! This is warning 3
+Agent 0 exceeded the maximum number of warnings: 3
+Red agent crashed
+recorded
+
+Total Time Game: 12.0
