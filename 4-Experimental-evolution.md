@@ -19,7 +19,7 @@ A pitfall of the first feature is demonstrated here - our Red offensive agent en
 
 ![4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food](uploads/1fc4b3b072d59730c30404a1fd70ea0b/4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food.gif)
 
-4- To solve the confusion above , we added one condition. Consider the future distances only when enemy is nearby. After all pacman should (in most cases) avoid dead ends (with or without food) when enemy is nearby. Solving 3 by calculating future value only when opponent is in proximity.
+4- To solve the confusion above, we added a simple condition - only consider the future distance when the enemy is nearby. After all the agent should (in most cases) avoid dead ends (with or without food) when the enemy is nearby. We therefore solved *3* by calculating future value only when opponent is in proximity.
 The replay below from between 1200 and 950 (red) it can be clearly seen that pacman is no more confused and it also avoids dead end when enemy is nearby. We only considered a depth of 7 with this feature at that time.[4_replay](uploads/164dc8bc3345304bd907ec1e40a75c6f/4_replay) 
 
 Inspired with success of 4, we added new future to check ratio of available food/nonavaiable food to n-depth. The idea is to favour paths where more food is availble compared to lower food. However,  It became a challenge to adjust weight b/w feature minimumDistanceToFood and this feature (they are both related to Food and indirectly to food distances). This proved to be a bad feature as pacman keeps roaming randomly and moving back and forth, and there was no obvious solution. We dropped that feature.
