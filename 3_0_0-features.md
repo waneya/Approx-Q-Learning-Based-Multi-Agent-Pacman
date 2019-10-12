@@ -48,11 +48,10 @@ A pitfall of the first feature is demonstrated here. Our Red offensive while max
 
 ![4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food](uploads/1fc4b3b072d59730c30404a1fd70ea0b/4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food.gif)
 
-4- Solving 3 by calculating future value only when opponent is in proximity (taken the product of both features and used same weight). Improved problem of 2 as well. A new problem arises. Offensive agent keep moving around nearest Food if an opponent is present. Possible solution is to add a feature that measured distance from nearest food to VisibleGhost as well. while calculating future available actions for each successor, add a penalty to the successor which might lead lead to ghost. 
-(Lead to a possible future weakness of agent moving back and forth)
+4- Solving 3 by calculating future value only when opponent is in proximity (taken the product of both features and used same weight). Improved problem of 2 as well. 
 
 
-5. Instead of solving above problem first,  added new future to check ratio of available food/nonavaiable food to n-depth. The idea is to favour paths where more food is availble compared to lower food. It became a challenge to adjust weight b/w feature minimumDistanceToFood and this feature, because they are related. Distance to Nearest Food is favoured to solve Pacman confusions. Added chasing scared ghost feature to Offensive agent.
+5. After that we added new future to check ratio of available food/nonavaiable food to n-depth. The idea is to favour paths where more food is availble compared to lower food. However,  It became a challenge to adjust weight b/w feature minimumDistanceToFood and this feature (they are both related to Food and indirectly to food distances). This proved to be a bad feature as pacman keeps roaming randomly and moving back and forth.  At the same time we also added a feature to chasing scared ghost feature to Offensive agent. (However, Later on we found experimentally that this feature is causing offensive agent to forget its actual work of collecting food and focus on eating enemies in home territory. Hence we removed it) 
 
 6. To solve problem as specified  in 4 in which opponent is not moving away from food nearest to our agent, added a new feature to measure distance of opponent agent (if visible) to nearest Food, and direct to agent to start moving towards some other random food.
 
