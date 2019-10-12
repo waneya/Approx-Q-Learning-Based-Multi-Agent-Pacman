@@ -38,6 +38,17 @@ We figured out that getting number of actions available to a depth of n with n>8
 
 ### Evolution 2 Demo
 
+```
+python
+Agent 0 took too long to make a move! This is warning 1
+Agent 0 took too long to make a move! This is warning 2
+Agent 0 took too long to make a move! This is warning 3
+Agent 0 exceeded the maximum number of warnings: 3
+Red agent crashed
+recorded
+
+Total Time Game: 12.0
+```
 [Cheeky-Pacmen_vs_staff_team_medium_contest16Capture.log](uploads/52f1eebb933d3e63e4b05121f3a859c3/Cheeky-Pacmen_vs_staff_team_medium_contest16Capture.log)
 
 #### Strategy summary
