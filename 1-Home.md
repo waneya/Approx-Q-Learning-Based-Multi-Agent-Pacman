@@ -1,12 +1,13 @@
 # UoM COMP90054 Contest Project
 
 - [1. Home and Introduction](/Home)
-- [2. Design Choices (Offense/Defense)](/2 Design Choices)
-    - [2.1 Approach Foo](/2_1_approach)
-    - [2.2 Approach FoO](/2_2_approach)
-    - [2.3 Approach FOo](/2_3_approach)
-- [3. Approach Evolution and Experiments](/3_approach_evolution)
-- [4. Conclusions and Reflections](/4_conclusions_and_reflections)
+- [2. Design Choices (Offense/Defense)](/2 Design choices)
+    - [3.1 Approximate Q Learning](/3.1 Approximate Q learning)
+        - [3.1.1 Features](/3.1.1 features)
+    - [3.2 Heuristic Search Algorithms](/3.2 Heuristic Search Algorithms)
+    - [3.3 Game Theoretic Methods](/3.3 Game Theoretic Methods)
+    - [3.4 Goal Recognition](/3.4 Goal Recognition)
+- [4 Experimental evolution](/4 Experimental evolution)
 
 [Next Page ](/2_0_design_choices)
 
