@@ -43,16 +43,17 @@ A pitfall of the first feature is demonstrated here. Our Red offensive while max
 
 
 
-3- Possible solution of 1 by adding future available actions as a feature. This did not worked as expected. We found it difficult to favour paths closer to food or paths with more action.  Resultantly pacman remained confused as to go where. This confusion is clearly eveident in attached replay from 1100-1000 [3_replay-Problem](uploads/91cb0bffcb7f3812888045b7d05c7379/3_replay-Problem)
+3- Possible solution of 1 by adding future available actions as a feature. This did not worked as expected. We found it difficult to favour paths closer to food or paths with more action.  Resultantly pacman remained confused as to go where. This confusion is clearly eveident in attached replay (red agent) from 1100-1000 [3_replay-Problem](uploads/91cb0bffcb7f3812888045b7d05c7379/3_replay-Problem)
 
 
 ![4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food](uploads/1fc4b3b072d59730c30404a1fd70ea0b/4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food.gif)
 
 4- To solve the confusion above , we added one condition. Consider the future distances only when enemy is nearby. After all pacman should (in most cases) avoid dead ends (with or without food) when enemy is nearby. Solving 3 by calculating future value only when opponent is in proximity.
-The replay below from between 1200 and 950 it can be clearly seen that pacman is no more confused and it also avoids dead end when enemy is nearby. We only considered a depth of 7 with this feature at that time.[4_replay](uploads/164dc8bc3345304bd907ec1e40a75c6f/4_replay) 
+The replay below from between 1200 and 950 (red) it can be clearly seen that pacman is no more confused and it also avoids dead end when enemy is nearby. We only considered a depth of 7 with this feature at that time.[4_replay](uploads/164dc8bc3345304bd907ec1e40a75c6f/4_replay) 
 
+Inspired with success of 4, we added new future to check ratio of available food/nonavaiable food to n-depth. The idea is to favour paths where more food is availble compared to lower food. However,  It became a challenge to adjust weight b/w feature minimumDistanceToFood and this feature (they are both related to Food and indirectly to food distances). This proved to be a bad feature as pacman keeps roaming randomly and moving back and forth, and there was no obvious solution. We dropped that feature.
 
-5. After that we added new future to check ratio of available food/nonavaiable food to n-depth. The idea is to favour paths where more food is availble compared to lower food. However,  It became a challenge to adjust weight b/w feature minimumDistanceToFood and this feature (they are both related to Food and indirectly to food distances). This proved to be a bad feature as pacman keeps roaming randomly and moving back and forth.  At the same time we also added a feature to chasing scared ghost feature to Offensive agent. (However, Later on we found experimentally that this feature is causing offensive agent to forget its actual work of collecting food and focus on eating enemies in home territory. Hence we removed it) 
+5.  After that we added a feature to chasing scared ghost by Defensive agent. (We also added it to offensive agent when it is in home teritory Later on we found experimentally that this feature is causing offensive agent to forget its actual work of collecting food and focus on eating enemies in home territory. Hence we removed it). This feature can be seen in replay below from 500-300[5-replay-OffensiveAgentCanChaseScaredOpponents](uploads/e0d9b51713f67a7b2f5afa1c02d32bc4/5-replay-OffensiveAgentCanChaseScaredOpponents)
 
 6. To solve problem as specified  in 4 in which opponent is not moving away from food nearest to our agent, added a new feature to measure distance of opponent agent (if visible) to nearest Food, and direct to agent to start moving towards some other random food.
 
