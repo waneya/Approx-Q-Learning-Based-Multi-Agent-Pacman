@@ -19,7 +19,7 @@ On 7th October we found out that our agent was entering into the dead ends and g
 To solve this we have added a feature to check number of available actions of a successor node, and avoid entering a position that limited the number of actions available.
 
 ### Evolution 1 Demo
-
+[ev1.gif.sb-a6948946-igj0LZ](uploads/9598b15c54c5919126f6b4696f2ecea9/ev1.gif.sb-a6948946-igj0LZ)
 between 1000-800 against staff super team (our agent is red) entering dead end.[Cheeky-Pacmen_vs_staff_team_super_RANDOM1292.replay](uploads/0a9d003bd5831487c091254d22582513/Cheeky-Pacmen_vs_staff_team_super_RANDOM1292.replay)
 
 #### Strategy summary
