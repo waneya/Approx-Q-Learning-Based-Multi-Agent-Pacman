@@ -72,8 +72,6 @@ We have added a condition that when less than 200 unit of time is left, pacman w
 
 # Evolution of the approach
 
-You can include screenshots of precompetition results and animated gifs, to showcase the evolution of your agents.
-
 #|Percentile|Date|Pos|No. teams|Points|Win|Tie|Lost|TOTAL|FAILED|Score balance|
 |--------|---|---|---|---|---|---|---|---|---|---|---|
 |1|54%|07/10/2019|13|23|66|21|3|22|46|0|-19|
