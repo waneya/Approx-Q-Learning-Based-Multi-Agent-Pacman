@@ -57,29 +57,4 @@ The attched replay clearly demonstrates this technique:
 
 [replay-0](uploads/afdc74ae6a0c5f3507ad457115d479c1/replay-0)
 
-
-| Consideration | Function                   |
-| ------------- | -------------------------- |
-| Eating food   | getFood(self, gameState)   |  
-| Find capsules | getCapsules(self, gameState)|
-
-## Defense
-
-| Consideration | Function                                  |
-| ------------- | ----------------------------------------- |
-| Defending food| getFoodYouAreDefending(self, gameSate)    |
-
-## General
-
-| Consideration | Function                                  |
-| ------------- | ----------------------------------------- |
-| Find opponents| getOpponents(self, gameState)             |
-| Find team     | getTeam(self, gameState)                  |
-| Overall score | getScore(self, gameState)                 |
-| Distance b/w objects | getMazeDistance(self, pos1, pos2)  |
-| Get belief on opponents | displayDistributionsOverPositions |
-| Get actions | getLegalActions |
-| Get successor states | generateSuccessor |
-| Noisy distance to each agent | getAgentDistances |
-
 [Back Home](/home) | [Next Home](/2_1_approach)
