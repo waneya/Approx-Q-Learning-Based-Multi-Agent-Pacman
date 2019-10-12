@@ -1,3 +1,12 @@
+In descending order. 
+Problem: Pacman will return home after eating one-third food. In the problem below against staff team super and top, our team lost because Pacman collected enough food but it does not focus on returning home when few time is left and hence we lost.
+
+[Cheeky-Pacmen_vs_staff_team_super_RANDOM1522_This_gives_us_the_hint_that_when_less_than_200_time_is_left_we_must_go_back.replay](uploads/2366f79908f4fc80ae96eb7a93b148b0/Cheeky-Pacmen_vs_staff_team_super_RANDOM1522_This_gives_us_the_hint_that_when_less_than_200_time_is_left_we_must_go_back.replay)
+
+[Cheeky-Pacmen_vs_staff_team_top_RANDOM1522_This_gives_us_hint_that_when_small_time_is_left_go_back_home.replay](uploads/358ee05c1abb31112b0bc01ff9407dfc/Cheeky-Pacmen_vs_staff_team_top_RANDOM1522_This_gives_us_hint_that_when_small_time_is_left_go_back_home.replay)
+
+Solution: WE have added a condition that when less than 200 unit of time is left, pacman will focus on returning home, in any case.
+
 # Evolution of the approach
 
 You can include screenshots of precompetition results and animated gifs, to showcase the evolution of your agents.
