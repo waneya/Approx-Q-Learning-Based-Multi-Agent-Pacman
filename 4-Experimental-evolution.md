@@ -2,7 +2,7 @@ Prior to the 6 experimental evolution demonstrations provided below, we worked o
 
 ## Offensive agent - fleeing from enemy ghost, (and pacman!)
 
-Our agent is the blue offensive agent. Our first attempt at attempting to stop our offensive agent from dying to enemy agents was to add a feature of maze distance to attempt to maximise it from an encountered enemy. 
+Our agent is the blue offensive agent. Our first attempt to stop our offensive agent from dying to enemy agents was to add a feature of maze distance to attempt to maximise it from an encountered enemy. 
 
 # Demo
 
