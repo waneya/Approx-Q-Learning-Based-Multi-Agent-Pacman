@@ -43,12 +43,13 @@ A pitfall of the first feature is demonstrated here. Our Red offensive while max
 
 
 
-3- Possible solution of 1 by adding future available actions as a feature... (DETAILS TO THIS ALONG WITH ITS REPLAY IS PRESENTED IN OFFENSIVE DESIGN CHOICE 2 (second one) and DESIGN CHOICE 3 ALONG WITH REPLAYS. PLEASE TAKE IT FROM THERE).  
+3- Possible solution of 1 by adding future available actions as a feature. This did not worked as expected. We found it difficult to favour paths closer to food or paths with more action.  Resultantly pacman remained confused as to go where. This confusion is clearly eveident in attached replay from 1100-1000 [3_replay-Problem](uploads/91cb0bffcb7f3812888045b7d05c7379/3_replay-Problem)
 
 
 ![4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food](uploads/1fc4b3b072d59730c30404a1fd70ea0b/4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food.gif)
 
-4- Solving 3 by calculating future value only when opponent is in proximity (taken the product of both features and used same weight). Improved problem of 2 as well. 
+4- To solve the confusion above , we added one condition. Consider the future distances only when enemy is nearby. After all pacman should (in most cases) avoid dead ends (with or without food) when enemy is nearby. Solving 3 by calculating future value only when opponent is in proximity.
+The replay below from between 1200 and 950 it can be clearly seen that pacman is no more confused and it also avoids dead end when enemy is nearby. We only considered a depth of 7 with this feature at that time.[4_replay](uploads/164dc8bc3345304bd907ec1e40a75c6f/4_replay) 
 
 
 5. After that we added new future to check ratio of available food/nonavaiable food to n-depth. The idea is to favour paths where more food is availble compared to lower food. However,  It became a challenge to adjust weight b/w feature minimumDistanceToFood and this feature (they are both related to Food and indirectly to food distances). This proved to be a bad feature as pacman keeps roaming randomly and moving back and forth.  At the same time we also added a feature to chasing scared ghost feature to Offensive agent. (However, Later on we found experimentally that this feature is causing offensive agent to forget its actual work of collecting food and focus on eating enemies in home territory. Hence we removed it) 
