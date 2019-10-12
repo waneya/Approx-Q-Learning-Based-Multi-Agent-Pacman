@@ -2,14 +2,15 @@
 
 ### Offensive features
 
-* deadEndWithActiveGhostNearbyFeature
+* deadEndWithActiveGhostNearbyFeature: Avoid entry to dead Tunnels (with no exit) , when enemy is nearby to prevent ending up in dead ends. A demo is given in Heuristic Search Algorithms
 * {1-3} stepsFromEnemyAgent1
 * {1-3} stepsFromEnemyAgent2
 * isSuccessorCloserToChoosenPoint
-* closenessToOptimizedFood
-* ActionsAvailableActiveGhostNearbyFeature
+* closenessToOptimizedFood: optimized food is the food which is not near to enemy (applicable if enemy is visible)
+* ActionsAvailableActiveGhostNearbyFeature: When enemy is nearby, this feature will cause offensive agent to prefer
+paths with more future actions available, this ensures smooth movement of pacman without causing him to enter in traps. A demo is presented in A demo is given in Heuristic Search Algorithms
 * foodEaten
-* capsuleEatenWithEnemyNearBy
+* capsuleEatenWithEnemyNearBy: Pacman will try to eat capsule when enemy is nearby otherwise tries to avoid it as much as possible.
 
 ### Defensive features
 
