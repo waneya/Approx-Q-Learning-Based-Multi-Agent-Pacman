@@ -39,7 +39,6 @@ We figured out that getting number of actions available to a depth of n with n>8
 ### Evolution 2 Demo
 
 ```
-Python
 Agent 0 took too long to make a move! This is warning 1
 Agent 0 took too long to make a move! This is warning 2
 Agent 0 took too long to make a move! This is warning 3
