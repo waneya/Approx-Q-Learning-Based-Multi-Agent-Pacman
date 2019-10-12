@@ -8,7 +8,7 @@
 * isSuccessorCloserToChoosenPoint
 * closenessToOptimizedFood: optimized food is the food which is not near to enemy (applicable if enemy is visible)
 * ActionsAvailableActiveGhostNearbyFeature: When enemy is nearby, this feature will cause offensive agent to prefer
-paths with more future actions available, this ensures smooth movement of pacman without causing him to enter in traps. A demo is presented in A demo is given in Heuristic Search Algorithms
+paths with more future actions available, this ensures smooth movement of pacman without causing him to enter in traps. 
 * foodEaten
 * capsuleEatenWithEnemyNearBy: Pacman will try to eat capsule when enemy is nearby otherwise tries to avoid it as much as possible.
 
