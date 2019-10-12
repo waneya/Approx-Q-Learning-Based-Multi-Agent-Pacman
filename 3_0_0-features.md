@@ -43,7 +43,7 @@ A pitfall of the first feature is demonstrated here. Our Red offensive while max
 
 
 
-3- Possible solution of 1 by adding future available actions as a feature... (DETAILS TO THIS ALONG WITH ITS REPLAY IS PRESENTED IN OFFENSIVE DESIGN CHOICE 2 (second one) and DESIGN CHOICE 3 ALONG WITH REPLAYS. PLEASE TAKE IT FROM THERE).  caused further problem of back-forth movement
+3- Possible solution of 1 by adding future available actions as a feature... (DETAILS TO THIS ALONG WITH ITS REPLAY IS PRESENTED IN OFFENSIVE DESIGN CHOICE 2 (second one) and DESIGN CHOICE 3 ALONG WITH REPLAYS. PLEASE TAKE IT FROM THERE).  
 
 
 ![4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food](uploads/1fc4b3b072d59730c30404a1fd70ea0b/4_-_offensive_agent_repeatedly_failing_to_re-enter_in_aims_of_closest_food.gif)
