@@ -29,8 +29,9 @@ At initialisation of the game, each team has 15secs to perform 'registry' comput
 
 1. Approximate Q-learning (reinforcement learning; model-Free MDP) 
 2. Heuristic search algorithms (using general or pacman specific heuristic functions) 
-3. Goal recognition techniques (to infer intentions of opponents)
-4. Game theoretic methods
+3. Game theoretic methods
+4. Goal recognition techniques (to infer intentions of opponents)
+
 
 ## Files implemented and utilised (in addition to files provided by UC Berkeley)
 
