@@ -5,7 +5,10 @@ Problem: Pacman will return home after eating one-third food. In the problem bel
 
 [Cheeky-Pacmen_vs_staff_team_top_RANDOM1522_This_gives_us_hint_that_when_small_time_is_left_go_back_home.replay](uploads/358ee05c1abb31112b0bc01ff9407dfc/Cheeky-Pacmen_vs_staff_team_top_RANDOM1522_This_gives_us_hint_that_when_small_time_is_left_go_back_home.replay)
 
-Solution: WE have added a condition that when less than 200 unit of time is left, pacman will focus on returning home, in any case.
+Solution: WE have added a condition that when less than 200 unit of time is left, pacman will focus on returning home, in any case. After adding this condition we won against all staff-teams on 12th october at 8am session.
+![image](uploads/632378307ac162f354ba5ff8d8bdf704/image.png)
+
+And consistently won against at least 3 staff teams (losing with either top or super at different times) through out the day.
 
 # Evolution of the approach
 
