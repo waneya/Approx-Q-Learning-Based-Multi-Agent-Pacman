@@ -52,6 +52,11 @@ The attched replay clearly demonstrates this technique:
 
 [replay-0](uploads/9aede4c576242d0caa997bec838c983e/replay-0)
 
+3. Related to second feature described above at 820 that detects dead tunnels, there is another methods that calculates the number of actions available at each successor to a depth of 50 states. When an enemy is nearby or chasing the agent will only take path that has most action available. At 555 in the replay, the agent can easily move up to eat many food. Instead it contunues to move right so that it can avoid successors with fewer available actions. Effectively it saves the agent from entering dead ends when enemy is nearby. If enemy is not nearby (more than a distance of 6 maze distance), it can go inside and collect. The method name is evaluateOffensiveAgentSuccessor(self, gameState, parent, grandParent,
+                                      n, status_till_N_successors, visitedNodes, gamma = 1)
+
+[replay-0](uploads/afdc74ae6a0c5f3507ad457115d479c1/replay-0)
+
 
 | Consideration | Function                   |
 | ------------- | -------------------------- |
