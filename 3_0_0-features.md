@@ -30,7 +30,7 @@
 
 ## Offensive agent - fleeing from enemy ghost, (and pacman!)
 
-Our first attempt at attempting to stop our offensive agent from dying to enemy agents was to add a feature of maze distance to attempt to maximise it from an encountered enemy. A pitfall of the first
+Our agent is the blue offensive agent. Our first attempt at attempting to stop our offensive agent from dying to enemy agents was to add a feature of maze distance to attempt to maximise it from an encountered enemy. A pitfall of the first
 
 # Demo
 
