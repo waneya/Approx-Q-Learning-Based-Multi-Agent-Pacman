@@ -1,4 +1,4 @@
-In descending order. 
+In descending order. (Problem on 11th solved for 12th)
 Problem: Pacman will return home after eating one-third food. In the problem below against staff team super and top, our team lost because Pacman collected enough food but it does not focus on returning home when few time is left and hence we lost.
 
 [Cheeky-Pacmen_vs_staff_team_super_RANDOM1522_This_gives_us_the_hint_that_when_less_than_200_time_is_left_we_must_go_back.replay](uploads/2366f79908f4fc80ae96eb7a93b148b0/Cheeky-Pacmen_vs_staff_team_super_RANDOM1522_This_gives_us_the_hint_that_when_less_than_200_time_is_left_we_must_go_back.replay)
