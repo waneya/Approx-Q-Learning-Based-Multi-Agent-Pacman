@@ -132,17 +132,17 @@ This demonstration shows the blue defensive player turning offensive. The agent 
 
 1
 
-| Evolution | Pros | Cons |
+| Approacj | Pros | Cons |
 |-------|-----------------|:-------------|
-|1| Avoid getting stuck in dead-ends | Agent sometimes overlooked food that was placed in a dead-end  |
-|1| Find optimal paths    | Increased computation time |
-|3| Assisted in avoiding detection | Match results had a difficult to predict non-deterministic element |
-|3| Prevented getting stuck in the centre     | Impacted ability to learn from this feature      |
-|4| Game theory allowed elimination of dominated strategies| Some situations are not easily applicable to game theory |
-|4| Allowed for generalisation in well-defined cases    | Risk of non-generalisation when ill-defined |
-|4| Rewards re-shaped to properly incentivise offensive agents | Initial ill-defined rewards led to bad incentives in this night's test|
-|5| Independent reward shaping for offensive and defensive agents | Difficulty in creating hybrid agents unless rewards are re-adjusted |
-|5| Offensive agents are more time-conscious   | If time conditions are not well generalised, this could lead to sub-optimal behaviour|
+|1.Heuristic Search| Avoid getting stuck in dead-ends | Agent sometimes overlooked food that was placed in a dead-end  |
+|2.Heuristic Search| Find optimal paths    | Increased computation time |
+|3.Goal Recognition| Assisted in avoiding detection | Match results had a difficult to predict non-deterministic element |
+|3.Goal Recognition| Prevented getting stuck in the centre     | Impacted ability to learn from this feature      |
+|4.Game Theoretic Method| Game theory allowed elimination of dominated strategies| Some situations are not easily applicable to game theory |
+|4.Approximate Q Learning| Allowed for generalisation in well-defined cases    | Risk of non-generalisation when ill-defined |
+|4.Approximate Q Learning| Rewards re-shaped to properly incentivise offensive agents | Initial ill-defined rewards led to bad incentives in this night's test|
+|5.Approximate Q Learning| Independent reward shaping for offensive and defensive agents | Difficulty in creating hybrid agents unless rewards are re-adjusted |
+|5.Approximate Q Learning| Offensive agents are more time-conscious   | If time conditions are not well generalised, this could lead to sub-optimal behaviour|
 
 # Future possible evolutions
 
