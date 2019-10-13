@@ -131,10 +131,12 @@ This demonstration shows the blue defensive player turning offensive. The agent 
 #### Strategy summary
 
 1
- # | Pros | Cons |
-|-------||-----------------|:-------------|
-|1|| Avoid getting stuck in dead-ends | Agent sometimes overlooked food that was placed in a dead-end  |
-||| Find optimal paths    | Increased computation time |
+
+| # | Pros | Cons |
+|-------|-----------------|:-------------|
+|1| Avoid getting stuck in dead-ends | Agent sometimes overlooked food that was placed in a dead-end  |
+|| Find optimal paths    | Increased computation time |
+
 3
 | Pros | Cons |
 |-----------------|:-------------|
