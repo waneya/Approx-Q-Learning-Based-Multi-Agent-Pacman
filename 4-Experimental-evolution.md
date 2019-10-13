@@ -118,7 +118,7 @@ In the following example, our offensive agent (red) has eaten a significant amou
 
 | Pros | Cons |
 |-----------------|:-------------|
-| Independent reward shaping for offensive and defensive agents | Difficulty in creating hybrid agents unless rewards are adjusted again  |
+| Independent reward shaping for offensive and defensive agents | Difficulty in creating hybrid agents unless rewards are re-adjusted |
 | Offensive agents are more time-conscious   | If time conditions are not well generalised, this could lead to sub-optimal behaviour|
 
 
