@@ -48,30 +48,27 @@ recorded
 
 Total Time Game: 12.0
 ```
-[Cheeky-Pacmen_vs_staff_team_medium_contest16Capture.log](uploads/52f1eebb933d3e63e4b05121f3a859c3/Cheeky-Pacmen_vs_staff_team_medium_contest16Capture.log)
-
-#### Strategy summary
-
-| Pros | Cons |
-|-----------------|:-------------|
-| First body part | Second cell  |
-| Second line     | foo          |
 
 ## Evolution 3 | Competition results: Position - 6/33 | Percentile - 18%
 ----
 
-We focused on optimising the entry point of the agent. We also focused on eliminating any back and forth repetitions. The solution to both problems was randomness.( will explain more later..............)
+The entry point for an offensive agent attacking, and the point at which the defensive agent would rest was initially set to the centre point of the map. The issue with this approach was that smart agents would often go around ours and attack before we had time to react. This required altering the goal recognition. 
+
+Perhaps surprisingly, we found, in the absence of enemy detection the best approach required randomisation. Our presumption was that smart agents were using probabilistic models to infer our position. As we were using a deterministic approach they were able to capitalise on our behaviour. 
+  
+We also focused on eliminating any back and forth repetitions.
 
 ### Evolution 3 Demo
 
-Demo description
+420-370. Orange agent
+[Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay](uploads/54eb6805366c129af3cba966a20d242f/Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay)
 
 #### Strategy summary
 
 | Pros | Cons |
 |-----------------|:-------------|
-| First body part | Second cell  |
-| Second line     | foo          |
+| Assisted in avoiding detection | Match results had a difficult to predict non-deterministic element |
+| Prevented getting stuck in the centre     | Impacted ability to learn from this feature      |
 
 ## Evolution 4 | Competition results: Position - 17/40 | Percentile - 42%
 ----
