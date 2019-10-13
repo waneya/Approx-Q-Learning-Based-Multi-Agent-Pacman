@@ -16,6 +16,8 @@ Our evolutions seem to demonstrate good general progress, however it is difficul
 ## Evolution 1 | Competition results: Position - 13/23 | Percentile - 54%
 ----
 
+We started our tournament progression as a median level player - leaving much to be desired.
+
 On 7th October we found out that our agent was entering into the dead ends and getting killed. This was primarily due to the fact that we did not implement any 'look ahead' features. As a result, the learning process assigned a high priority to following (or escaping) enemy agents, as opposed to finding the optimal path. As identified earlier, this was one of the pitfalls with approximate Q-learning - if we did not implement effective features, the learning process would skew towards sub-optimal states.
 
 To solve this we have added a [heuristic search algorithm](/3.2 Heuristic Search Algorithms) to determine what paths to take. The heuristic looked ahead to check number of available actions to n-depth and avoid entering a position that limited the number of actions available.
@@ -36,10 +38,11 @@ In the following example, our agent (orange) is stuck behind a wall and cannot e
 
 ## Evolution 2 | Competition results: Position - 24/29 | Percentile - 83%
 ----
+Unfortunately, this hindered rather helped our agent... We slipped into the bottom quartile.
 
 We found out that our offensive agent was continuously exceeding the time limit to make a move and crashing.
 
-We figured out that getting number of actions available to a depth of n with n>8 was causing this problem. This was an important feature to find dead ends and avoid them when being chased by enemy agent. To improve this, we wrote an efficient [heuristic search algorithm](/3.2 Heuristic Search Algorithms) to find out this depth using IDS. With the new version we can work on n>50 and not exceed the time limit.
+We deduced that getting number of actions available to a depth of n with n>8 was causing this problem. This was a crucial feature, so the implementation had to be reassessed. Otherwise there was a significant risk of being trapped in dead-end positions. To improve this, we wrote an efficient [heuristic search algorithm](/3.2 Heuristic Search Algorithms) to determine the optimal position using IDS. We defined the goal of the search  With the new version we can work on n>50 and not exceed the time limit.
 
 ### Evolution 2 demo
 
@@ -56,6 +59,7 @@ Total Time Game: 12.0
 
 ## Evolution 3 | Competition results: Position - 6/33 | Percentile - 18%
 ----
+This result confirmed we were on the right track, placing in the top quintile of players.
 
 The entry point for an offensive agent attacking, and the point at which the defensive agent would rest was initially set to the centre point of the map. The issue with this approach was that smart agents would often go around ours and attack before we had time to react.
 
