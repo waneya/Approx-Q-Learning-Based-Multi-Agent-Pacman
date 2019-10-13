@@ -14,7 +14,7 @@
 
 ## Contents
 
-- [1. Home](/1 Home)
+- [1. Home](/Home)
 - [2. Design Choices](/2 Design choices)
     - [3.1 Approximate Q Learning](/3.1 Approximate Q Learning)
     - [3.2 Heuristic Search Algorithms](/3.2 Heuristic Search Algorithms)
