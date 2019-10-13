@@ -9,7 +9,7 @@ Experimental evolution, along with associated replays are illustrated below. We 
 |3|18%|09/10/2019|6|33|139|43|10|11|64|0|225|
 |4|42%|11/10/2019|17|40|136|44|4|30|78|0|-34|
 |5|9%|12/10/2019|4|47|203|64|11|17|92|0|447|
-|6||13/10/2019|
+|6|13%|13/10/2019|6|48|196|62|10|22|94|0|462|
 
 Our evolutions seem to demonstrate good general progress, however it is difficult to assert certainty because of the low sample sizing of nightly competitions. Note that each successive evolution will encompass cumulative implementation of previous evolution approaches.
 
@@ -90,6 +90,10 @@ Here we can see our agent (red) has a clear escape route, except thinks it is in
 
 At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`, which would also later be further improved to incremental positive score changes as discussed in section [3.1 Approximate Q-learning](/3.1 Approximate Q-learning)
 
+#### *Now it works*
+In this example our agent (red) identifies it is in strife and so runs into the enemy in order to save time.
+![suicide2](uploads/956e54bcf4e50bb981b3f08245a0d215/suicide2.gif)
+
 ## Evolution 5 | Competition results: Position - 4/47 | Percentile - 9%
 ----
 
@@ -117,7 +121,7 @@ This evolution included an important shift in the Q-learning rewards, whereby we
 
 And in terms of generalising well, this evolution also performed better in the nightly competition.
 
-## Evolution 6 | Competition results: Position -  | Percentile - 
+## Evolution 6 | Competition results: Position - 6 | Percentile - 13%
 ----
 
 Once we successfully climbed the leader-board, we turned our attention to beating the staff_team_super consistently. In order to do so we recognised we had to consider our agents as a team, as opposed to individuals. To do this we implemented a 'toggle' that enabled agents to switch between offensive and defensive. Doing so allowed them to strive for a global optimum as opposed to having individuals objectives. 
