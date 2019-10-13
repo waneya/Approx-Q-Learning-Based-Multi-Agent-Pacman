@@ -9,6 +9,7 @@ Experimental evolution, along with associated replays are illustrated below. We 
 |3|18%|09/10/2019|6|33|139|43|10|11|64|0|225|
 |4|42%|11/10/2019|17|40|136|44|4|30|78|0|-34|
 |5|9%|12/10/2019|4|47|203|64|11|17|92|0|447|
+|6||13/10/2019|
 
 Our evolutions seem to demonstrate good general progress, however it is difficult to assert certainty because of the low sample sizing of nightly competitions.
 
