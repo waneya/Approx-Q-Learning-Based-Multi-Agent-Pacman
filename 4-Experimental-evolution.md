@@ -19,7 +19,7 @@ On 7th October we found out that our agent was entering into the dead ends and g
 To solve this we have added a heuristic search algorithm to determine what paths to take. The heuristic looked ahead to check number of available actions to n-depth and avoid entering a position that limited the number of actions available.
 
 ### Evolution 1 Demo
-
+In the following example, our agent (orange) is stuck behind a wall and cannot eat the enemy.
 ![Oct-13-2019_11-36-39](uploads/5f2c651034f914dfcede077ba04272dc/Oct-13-2019_11-36-39.gif)
 
 between 1000-800 against staff super team (our agent is red) entering dead end.[Cheeky-Pacmen_vs_staff_team_super_RANDOM1292.replay](uploads/0a9d003bd5831487c091254d22582513/Cheeky-Pacmen_vs_staff_team_super_RANDOM1292.replay)
@@ -63,7 +63,7 @@ This action was only chosen as a last resort. Prioritised above this was our goa
 We also focused on eliminating any back and forth repetitions.
 
 ### Evolution 3 Demo
-In the following example, our agent (orange) is stuck behind a wall and cannot eat the enemy.
+In the following example our agent (orange) is resting in the middle of the map. Due to it sitting in one location the blue offensive agent is able to sneak around the outside of the map and attack our position.
 ![Oct-13-2019_11-43-58](uploads/418f8bb6a2f2a7d6f455981b221ffac9/Oct-13-2019_11-43-58.gif)
 
 [Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay](uploads/54eb6805366c129af3cba966a20d242f/Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay)
