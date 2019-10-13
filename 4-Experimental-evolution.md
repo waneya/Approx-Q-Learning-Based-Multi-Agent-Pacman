@@ -29,13 +29,6 @@ In the following example, our agent (red) runs into a dead-end and is trapped by
 
 To solve this we have added a [heuristic search algorithm](/3.2 Heuristic Search Algorithms) to determine what paths to take. The heuristic looked ahead to check number of available actions to n-depth and avoid entering a position that limited the number of actions available.
 
-#### Strategy summary
-
-| Pros | Cons |
-|-----------------|:-------------|
-| Avoid getting stuck in dead-ends | Agent sometimes overlooked food that was placed in a dead-end  |
-| Find optimal paths    | Increased computation time |
-
 ## Evolution 2 | Competition results: Position - 24/29 | Percentile - 83%
 ----
 Unfortunately, this hindered rather helped our agent... We slipped into the bottom quartile.
@@ -81,13 +74,6 @@ Fortunately our agent was very good at inferring the opponent position using our
 
 ![goal_Rec](uploads/3b95db5c7868d5f9e333d56f4bcf0d2a/goal_Rec.gif)
 
-#### Strategy summary
-
-| Pros | Cons |
-|-----------------|:-------------|
-| Assisted in avoiding detection | Match results had a difficult to predict non-deterministic element |
-| Prevented getting stuck in the centre     | Impacted ability to learn from this feature      |
-
 ## Evolution 4 | Competition results: Position - 17/40 | Percentile - 42%
 ----
 
@@ -103,14 +89,6 @@ Here we can see our agent (red) has a clear escape route, except thinks it is in
 ![suicide](uploads/4572d5a74ec2a285758e3bc1861256f3/suicide.gif)
 
 At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`, which would also later be further improved to incremental positive score changes as discussed in section [3.1 Approximate Q-learning](/3.1 Approximate Q-learning)
-
-#### Strategy summary
-
-| Pros | Cons |
-|-----------------|:-------------|
-| Game theory allowed elimination of dominated strategies| Some situations are not easily applicable to game theory |
-| Allowed for generalisation in well-defined cases    | Risk of non-generalisation when ill-defined |
-| Rewards re-shaped to properly incentivise offensive agents | Initial ill-defined rewards led to bad incentives in this night's test|
 
 ## Evolution 5 | Competition results: Position - 4/47 | Percentile - 9%
 ----
@@ -137,14 +115,6 @@ This evolution included an important shift in the Q-learning rewards, whereby we
 
 ![image](uploads/632378307ac162f354ba5ff8d8bdf704/image.png)
 
-#### Strategy summary
-
-| Pros | Cons |
-|-----------------|:-------------|
-| Independent reward shaping for offensive and defensive agents | Difficulty in creating hybrid agents unless rewards are re-adjusted |
-| Offensive agents are more time-conscious   | If time conditions are not well generalised, this could lead to sub-optimal behaviour|
-
-
 ## Evolution 6 | Competition results: Position -  | Percentile - 
 ----
 
@@ -156,6 +126,33 @@ Once we successfully climbed the leader-board, we turned our attention to beatin
 This demonstration shows the blue defensive player turning offensive. The agent chose to do this as the enemy ate a capsule - scaring the defender.
 
 ![turning_offensive](uploads/85202ba265c4ee2310deb13ca1d61f04/turning_offensive.gif)
+
+
+#### Strategy summary
+
+1
+| # | Pros | Cons |
+|-------||-----------------|:-------------|
+|1|| Avoid getting stuck in dead-ends | Agent sometimes overlooked food that was placed in a dead-end  |
+||| Find optimal paths    | Increased computation time |
+3
+| Pros | Cons |
+|-----------------|:-------------|
+| Assisted in avoiding detection | Match results had a difficult to predict non-deterministic element |
+| Prevented getting stuck in the centre     | Impacted ability to learn from this feature      |
+
+4
+| Pros | Cons |
+|-----------------|:-------------|
+| Game theory allowed elimination of dominated strategies| Some situations are not easily applicable to game theory |
+| Allowed for generalisation in well-defined cases    | Risk of non-generalisation when ill-defined |
+| Rewards re-shaped to properly incentivise offensive agents | Initial ill-defined rewards led to bad incentives in this night's test|
+
+5
+| Pros | Cons |
+|-----------------|:-------------|
+| Independent reward shaping for offensive and defensive agents | Difficulty in creating hybrid agents unless rewards are re-adjusted |
+| Offensive agents are more time-conscious   | If time conditions are not well generalised, this could lead to sub-optimal behaviour|
 
 # Future possible evolutions
 
