@@ -41,4 +41,4 @@ At initialisation of the game, each team has 15secs to perform 'registry' comput
 
 ***featureExtraction.py:*** contains the majority of functions that are utilised to generate features within *myTeam.py*.
 
-[Back Home](/home) | [Next Home](/2_1_approach)
+[Back Home](/home) | [Next Home](/home)
