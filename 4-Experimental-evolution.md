@@ -17,7 +17,7 @@ On 7th October we found out that our agent was entering into the dead ends and g
 
 To solve this we have added a heuristic search algorithm to determine what paths to take. The heuristic looked ahead to check number of available actions to n-depth and avoid entering a position that limited the number of actions available.
 
-### Evolution 1 Demo
+### Evolution 1 demo
 In the following example, our agent (orange) is stuck behind a wall and cannot eat the enemy.
 ![Oct-13-2019_11-36-39](uploads/5f2c651034f914dfcede077ba04272dc/Oct-13-2019_11-36-39.gif)
 
@@ -37,7 +37,7 @@ We found out that our offensive agent was continuously exceeding the time limit 
 
 We figured out that getting number of actions available to a depth of n with n>8 was causing this problem. This was an important feature to find dead ends and avoid them when being chased by enemy agent. To improve this, we wrote an efficient algorithm to find out this depth using IDS. With the new version we can work on n>50 and not exceed the time limit.
 
-### Evolution 2 Demo
+### Evolution 2 demo
 
 ```
 Agent 0 took too long to make a move! This is warning 1
@@ -61,7 +61,7 @@ This action was only chosen as a last resort. Prioritised above this was our goa
   
 We also focused on eliminating any back and forth repetitions.
 
-### Evolution 3 Demo
+### Evolution 3 demo
 In the following example our agent (orange) is resting in the middle of the map. Due to it sitting in one location the blue offensive agent is able to sneak around the outside of the map and attack our position.
 ![Oct-13-2019_11-43-58](uploads/418f8bb6a2f2a7d6f455981b221ffac9/Oct-13-2019_11-43-58.gif)
 
@@ -84,7 +84,7 @@ During 11th October We have added a feature in which agent would kill itself whe
 
 At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`.
 
-### Evolution 4 Demo
+### Evolution 4 demo
 
 the replay below at around time 600-500.
 [Cheeky-Pacmen_vs_staff_team_super_RANDOM4214.replay](uploads/83034c46a0d216eacd086f4e97bd995e/Cheeky-Pacmen_vs_staff_team_super_RANDOM4214.replay).
@@ -104,7 +104,7 @@ On 12th October the agent would return home after eating one-third food. In the 
 This evolution included an important shift in the Q-learning rewards, whereby we attempted to isolate rewards of offensive and defensive agents so that their performance did not influence each other's rewards. Further explanation can be found in section '3.1 Approximate Q-learning'. In general, this allowed our agents to better learn how to weight features to maximise their own performance as opposed to being misled - for example, a defensive agent can think it is improving with our previous reward shaping, however, it could just be misled by our offensive agent's improved performance.
 
 
-### Evolution 5 Demo
+### Evolution 5 demo
 
 In the following example, our offensive agent (red) has eaten a significant amount of food. Unfortunately, he is still hungry and not willing to deposit the food, causing the team to lose as the time runs out.
 ![notreturning](uploads/133a1679fe382ef5c36d8f89185b68c2/notreturning.gif)
@@ -127,7 +127,7 @@ In the following example, our offensive agent (red) has eaten a significant amou
 
 Once we successfully climbed the leaderboard, we turned our attention to beating the staff_team_super. In order to do so we recognised we had to consider our agents as a team, as opposed to individuals. To do this we implemented a 'toggle' that enabled agents to switch between offensive and defensive. Doing so allowed them to strive for a global optimum as opposed to having individuals objectives. 
 
-### Evolution 5 Demo
+### Evolution 5 demo
 
 This demonstration shows the blue defensive player turning offensive. The agent chose to do this as the enemy ate a capsuled and it became scared.
 
