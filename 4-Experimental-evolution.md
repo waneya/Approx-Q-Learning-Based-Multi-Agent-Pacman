@@ -27,7 +27,7 @@ between 1000-800 against staff super team (our agent is red) entering dead end.[
 | Pros | Cons |
 |-----------------|:-------------|
 | Avoid getting stuck in dead-ends | Agent sometimes overlooked food that was placed in a dead-end  |
-|     | Increased computation time |
+| Find optimal paths    | Increased computation time |
 
 ## Evolution 2 | Competition results: Position - 24/29 | Percentile - 83%
 ----
@@ -76,9 +76,9 @@ Demo description
 ## Evolution 4 | Competition results: Position - 17/40 | Percentile - 42%
 ----
 
-During 11th October We have added a feature in which agent would kill itself when stuck between and enemy ghost agent and wall. Superior agents would trap our agent and remove any ability to play the game. We found out that the feature was not working correctly and agent is killing itself randomly. The problem is shown is 
+During 11th October We have added a feature in which agent would kill itself when stuck between and enemy ghost agent and wall. Superior agents would trap our agent and remove any ability to play the game. We found out that the feature was not working correctly and agent is killing itself randomly.
 
-Solution: The bug was debugged and agent performed well after wards.
+At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`.
 
 ### Evolution 4 Demo
 
