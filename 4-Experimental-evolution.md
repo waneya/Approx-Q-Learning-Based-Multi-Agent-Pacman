@@ -21,7 +21,10 @@ On 7th October we found out that our agent was entering into the dead ends and g
 To solve this we have added a [heuristic search algorithm](/3.2 Heuristic Search Algorithms) to determine what paths to take. The heuristic looked ahead to check number of available actions to n-depth and avoid entering a position that limited the number of actions available.
 
 ### Evolution 1 demo
+
+#### Stuck behind a wall
 In the following example, our agent (orange) is stuck behind a wall and cannot eat the enemy.
+
 ![Oct-13-2019_11-36-39](uploads/5f2c651034f914dfcede077ba04272dc/Oct-13-2019_11-36-39.gif)
 
 #### Strategy summary
@@ -110,7 +113,9 @@ This evolution included an important shift in the Q-learning rewards, whereby we
 
 ### Evolution 5 demo
 
+#### Agent not returning home
 In the following example, our offensive agent (red) has eaten a significant amount of food. Unfortunately, he is still hungry and not willing to deposit the food, causing the team to lose as the time runs out.
+
 ![notreturning](uploads/133a1679fe382ef5c36d8f89185b68c2/notreturning.gif)
 
 ## Success in beating all staff!
