@@ -115,6 +115,8 @@ This evolution included an important shift in the Q-learning rewards, whereby we
 
 ![image](uploads/632378307ac162f354ba5ff8d8bdf704/image.png)
 
+And in terms of generalising well, this evolution also performed better in the nightly competition.
+
 ## Evolution 6 | Competition results: Position -  | Percentile - 
 ----
 
