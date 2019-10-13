@@ -1,8 +1,10 @@
 # UoM COMP90054 Contest Project
 
+## Brought to you by the 'Cheeky Pacmen' team
+
 ![Screen_Shot_2019-10-13_at_2.55.27_pm](uploads/59957435e0bfab8dfaf5912f5f8c31fc/Screen_Shot_2019-10-13_at_2.55.27_pm.png)
 
-## Brought to you by the 'Cheeky Pacmen' team
+
 
 ### Team Members
 
