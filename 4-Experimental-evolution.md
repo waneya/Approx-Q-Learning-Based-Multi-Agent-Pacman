@@ -126,6 +126,13 @@ In the following example, our offensive agent (red) has eaten a significant amou
 
 ![notreturning](uploads/133a1679fe382ef5c36d8f89185b68c2/notreturning.gif)
 
+### Learnt moves
+
+## *How did it do that?*
+During this phase we saw a few interesting moves that weren't explicitly laid out by the feature set. One of these was 'baiting' the enemy by pretending to retreat - then attacking, as demonstrated by the orange agent. Presumably, this move was taken due to a combination of the desire for an enemy to be a pacman and in our territory.
+
+![baitingenemy](uploads/b6cf0b13eaae6fdf5efd77f51ef3177b/baitingenemy.gif)
+
 This evolution included an important shift in the Q-learning rewards, whereby we attempted to isolate rewards of offensive and defensive agents so that their performance did not influence each other's rewards. Further explanation can be found in section [3.1 Approximate Q-learning](/3.1 Approximate Q-learning). In general, this allowed our agents to better learn how to weight features to maximise their own performance as opposed to being misled - for example, a defensive agent can think it is improving with our previous reward shaping, however, it could just be misled by our offensive agent's improved performance.
 
 ### And the result.....? Success in beating all staff!
