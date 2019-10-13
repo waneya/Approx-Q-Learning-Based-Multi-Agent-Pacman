@@ -82,9 +82,9 @@ Fortunately our agent was very good at inferring opponent position use our goal 
 ## Evolution 4 | Competition results: Position - 17/40 | Percentile - 42%
 ----
 
-During 11th October We have added a feature in which agent would kill itself when stuck between and enemy ghost agent and wall. Superior agents would trap our agent and remove any ability to play the game. We found out that the feature was not working correctly and agent is killing itself randomly.
+The evolution tested on 11th October integrated a feature in which agent would kill itself when stuck between an enemy ghost agent and a wall. Superior agents would trap our agent and remove any ability to play the game. We found out that the feature was not working correctly and agent is killing itself randomly - which could be a possible justification of our lowering in percentile for this evolution's nightly competition performance.
 
-At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`.
+At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`, which would also later be further improved to incremental positive score changes as discussed in section '3.1 Approximate Q-learning'.
 
 ### Evolution 4 demo
 
@@ -97,6 +97,7 @@ the replay below at around time 600-500.
 |-----------------|:-------------|
 | Game theory allowed elimination of dominated strategies| Some situations are not easily applicable to game theory |
 | Allowed for generalisation in well-defined cases    | Risk of non-generalisation when ill-defined |
+| Rewards re-shaped to properly incentivise offensive agents | Initial ill-defined rewards led to bad incentives in this night's test|
 
 ## Evolution 5 | Competition results: Position - 4/47 | Percentile - 9%
 ----
