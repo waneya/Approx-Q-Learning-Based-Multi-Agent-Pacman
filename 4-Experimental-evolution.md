@@ -102,7 +102,7 @@ Here we can see our agent (red) has a clear escape route, except thinks it is in
 
 ![suicide](uploads/4572d5a74ec2a285758e3bc1861256f3/suicide.gif)
 
-At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`, which would also later be further improved to incremental positive score changes as discussed in section '3.1 Approximate Q-learning'.
+At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`, which would also later be further improved to incremental positive score changes as discussed in section [3.1 Approximate Q-learning](/3.1 Approximate Q-learning)
 
 #### Strategy summary
 
