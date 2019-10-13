@@ -25,13 +25,13 @@ l^~"-------------"~^I   l^~"-------------"~^I
 
 ## Contents
 
-- [1. Home](/Home)
+- [1. Home](/1 Home)
 - [2. Design Choices (Offense/Defense)](/2 Design choices)
-    - [3.1 Approximate Q Learning](/3.1 Approximate Q learning)
+    - [3.1 Approximate Q Learning](/3.1 Approximate Q Learning)
     - [3.2 Heuristic Search Algorithms](/3.2 Heuristic Search Algorithms)
     - [3.3 Game Theoretic Methods](/3.3 Game Theoretic Methods)
     - [3.4 Goal Recognition](/3.4 Goal Recognition)
-- [4 Experimental evolution](/4 Experimental evolution)
+- [4 Experimental evolution](/4 Experimental Evolution)
 
 [Next Page ](/2_0_design_choices)
 
