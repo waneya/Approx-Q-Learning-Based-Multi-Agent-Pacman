@@ -122,4 +122,16 @@ In following example our offensive agent (red) has eaten a significant amount of
 | Second line     | foo          |
 
 
+## Evolution 6 | Competition results: Position -  | Percentile - 
+----
+
+Once we successfully climbed the leaderboard, we turned our attention to beating the staff_team_super. In order to do so we recognised we had to consider our agents as a team, as opposed to individuals. To do this we implemented a 'toggle' that enabled agents to switch between offensive and defensive. Doing so allowed them to strive for a global optimum as opposed to having individuals objectives. 
+
+### Evolution 5 Demo
+
+This demonstration shows the blue defensive player turning offensive. The agent chose to do this as the enemy ate a capsuled and it became scared.
+
+![turning_offensive](uploads/85202ba265c4ee2310deb13ca1d61f04/turning_offensive.gif)
+
+
 [Previous Page](/3_approach_evolution)| [Next Page](/4_conclusion)
