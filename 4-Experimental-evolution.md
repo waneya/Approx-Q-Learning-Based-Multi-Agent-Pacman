@@ -1,4 +1,4 @@
-Experimental evolution, along with associated replays are illustrated below. We continuously monitored our agent and improved it from replays available from tournaments or staff_teams. It was then re-trained to account for the updated feature representation. The evolutionary process and the tournament results after this phase are presented below.
+Experimental evolution, along with associated replays are illustrated below. We continuously monitored our agent and improved it from replays available from tournaments or staff_teams. It was then re-trained to account for the updated feature representation. The evolutionary process and the tournament results after each phase are presented below.
 
 # Evolution of the approach
 
