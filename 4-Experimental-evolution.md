@@ -128,9 +128,7 @@ This demonstration shows the blue defensive player turning offensive. The agent 
 ![turning_offensive](uploads/85202ba265c4ee2310deb13ca1d61f04/turning_offensive.gif)
 
 
-#### Strategy summary
-
-1
+## Strategy summary
 
 |#| Approach | Pros | Cons |
 |-----|-------|-----------------|:-------------|
