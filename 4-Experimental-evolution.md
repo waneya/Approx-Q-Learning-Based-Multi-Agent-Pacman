@@ -99,13 +99,14 @@ the replay below at around time 600-500.
 ## Evolution 5 | Competition results: Position - 4/47 | Percentile - 9%
 ----
 
-On 12th October the agent would return home after eating one-third food. In the problem below against staff team super and top, our team lost because the agent collected enough food but did not focus on returning home when the time was running out.
+On 12th October the agent would return home after eating one-third food. In the problem below against staff team super and top, our team lost because the agent collected enough food but did not focus on returning home when the time was running out. We added a condition that when less than 200 unit of time is left, pacman will focus on returning home, in any case. After adding this condition we won against all staff-teams on 12th october in the 8am session.
 
-We have added a condition that when less than 200 unit of time is left, pacman will focus on returning home, in any case. After adding this condition we won against all staff-teams on 12th october at 8am session.
+This evolution included an important shift in the Q-learning rewards, whereby we attempted to isolate rewards of offensive and defensive agents so that their performance did not influence each other's rewards. Further explanation can be found in section '3.1 Approximate Q-learning'. In general, this allowed our agents to better learn how to weight features to maximise their own performance as opposed to being misled - for example, a defensive agent can think it is improving with our previous reward shaping, however, it could just be misled by our offensive agent's improved performance.
+
 
 ### Evolution 5 Demo
 
-In following example our offensive agent (red) has eaten a significant amount of food. Unfortunately, he is still hungry and not willing to deposit the food, causing the team to lose as the time runs out.
+In the following example, our offensive agent (red) has eaten a significant amount of food. Unfortunately, he is still hungry and not willing to deposit the food, causing the team to lose as the time runs out.
 ![notreturning](uploads/133a1679fe382ef5c36d8f89185b68c2/notreturning.gif)
 [Cheeky-Pacmen_vs_staff_team_super_RANDOM1522_This_gives_us_the_hint_that_when_less_than_200_time_is_left_we_must_go_back.replay](uploads/2366f79908f4fc80ae96eb7a93b148b0/Cheeky-Pacmen_vs_staff_team_super_RANDOM1522_This_gives_us_the_hint_that_when_less_than_200_time_is_left_we_must_go_back.replay)
 
@@ -117,8 +118,8 @@ In following example our offensive agent (red) has eaten a significant amount of
 
 | Pros | Cons |
 |-----------------|:-------------|
-| First body part | Second cell  |
-| Second line     | foo          |
+| Independent reward shaping for offensive and defensive agents | Difficulty in creating hybrid agents unless rewards are adjusted again  |
+| Offensive agents are more time-conscious   | If time conditions are not well generalised, this could lead to sub-optimal behaviour|
 
 
 ## Evolution 6 | Competition results: Position -  | Percentile - 
