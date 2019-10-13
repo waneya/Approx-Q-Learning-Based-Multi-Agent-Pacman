@@ -15,7 +15,7 @@ l^~"-------------"~^I   l^~"-------------"~^I
   ^.             .^       ^.             .^   
     "-.._____.,-"           "-.._____.,-"
 ```
-## Brought to you by the CheekyPacmen
+## Brought to you by the 'Cheeky Pacmen' team
 
 ### Team Members
 
