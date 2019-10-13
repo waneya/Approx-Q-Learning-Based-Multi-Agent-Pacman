@@ -118,7 +118,7 @@ In the following example, our offensive agent (red) has eaten a significant amou
 
 ![notreturning](uploads/133a1679fe382ef5c36d8f89185b68c2/notreturning.gif)
 
-## Success in beating all staff!
+### Success in beating all staff!
 
 ![image](uploads/632378307ac162f354ba5ff8d8bdf704/image.png)
 
