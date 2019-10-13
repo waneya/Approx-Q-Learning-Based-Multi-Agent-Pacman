@@ -23,6 +23,8 @@ l^~"-------------"~^I   l^~"-------------"~^I
 * Maxim Mattvey       - mattveym@student.unimelb.edu.au   - 694125
 * Matthew O'Halloran  - mohalloran@student.unimelb.edu.au - 702322
 
+## Contents
+
 - [1. Home and Introduction](/Home)
 - [2. Design Choices (Offense/Defense)](/2 Design choices)
     - [3.1 Approximate Q Learning](/3.1 Approximate Q learning)
