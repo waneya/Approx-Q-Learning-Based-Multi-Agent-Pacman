@@ -33,7 +33,7 @@ l^~"-------------"~^I   l^~"-------------"~^I
     - [3.4 Goal Recognition](/3.4 Goal Recognition)
 - [4 Experimental evolution](/4 Experimental Evolution)
 
-[Next Page ](/2_0_design_choices)
+[Next Page ](/2 Design Choices)
 
 # Youtube presentation
 
