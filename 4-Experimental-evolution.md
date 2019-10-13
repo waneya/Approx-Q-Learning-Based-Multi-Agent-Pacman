@@ -22,7 +22,7 @@ To solve this we have added a [heuristic search algorithm](/3.2 Heuristic Search
 
 ### Evolution 1 demo
 
-#### Stuck behind a wall
+#### *Stuck behind a wall*
 In the following example, our agent (orange) is stuck behind a wall and cannot eat the enemy.
 
 ![Oct-13-2019_11-36-39](uploads/5f2c651034f914dfcede077ba04272dc/Oct-13-2019_11-36-39.gif)
@@ -66,12 +66,13 @@ This action was only chosen as a last resort. Prioritised above this was our [go
 We also focused on eliminating any back and forth repetitions.
 
 ### Evolution 3 demo
-#### Enemy looping around agent
+
+#### *Enemy looping around agent*
 In the following example our agent (orange) is resting in the middle of the map. Due to it sitting in one location the blue offensive agent is able to sneak around the outside of the map and attack our position.
 
 ![Oct-13-2019_11-43-58](uploads/418f8bb6a2f2a7d6f455981b221ffac9/Oct-13-2019_11-43-58.gif)
 
-#### Inferring using food eaten
+#### *Inferring using food eaten*
 Fortunately our agent was very good at inferring opponent position use our [goal recognition technique](/3.2 Heuristic Search Algorithms). As evidenced below, our orange defensive agent was able to identify the blue agent was in its territory once it ate some food.
 
 ![goal_Rec](uploads/3b95db5c7868d5f9e333d56f4bcf0d2a/goal_Rec.gif)
@@ -113,7 +114,7 @@ This evolution included an important shift in the Q-learning rewards, whereby we
 
 ### Evolution 5 demo
 
-#### Agent not returning home
+#### *Agent not returning home*
 In the following example, our offensive agent (red) has eaten a significant amount of food. Unfortunately, he is still hungry and not willing to deposit the food, causing the team to lose as the time runs out.
 
 ![notreturning](uploads/133a1679fe382ef5c36d8f89185b68c2/notreturning.gif)
