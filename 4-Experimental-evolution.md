@@ -72,9 +72,9 @@ We also focused on eliminating any back and forth repetitions.
 ### Evolution 3 demo
 
 #### *Enemy looping around agent*
-In the following example our agent (orange) is resting in the middle of the map. Due to it sitting in one location the blue offensive agent is able to sneak around the outside of the map and attack our position.
+In the following example our agent (red) is trying to attack through the middle of the map. It identifies that the current defender is also in the middle so moves up and finds another way in.
 
-![Oct-13-2019_11-43-58](uploads/418f8bb6a2f2a7d6f455981b221ffac9/Oct-13-2019_11-43-58.gif)
+![find_another_entry](uploads/7ac9f21d4767dd68b286990b4f7d31a2/find_another_entry.gif)
 
 #### *Inferring using food eaten*
 Fortunately our agent was very good at inferring the opponent position using our [goal recognition technique](/3.2 Heuristic Search Algorithms). As evidenced below, our orange defensive agent was able to identify the blue agent was in its territory once it ate some food.
