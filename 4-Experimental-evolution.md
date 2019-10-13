@@ -63,10 +63,9 @@ This action was only chosen as a last resort. Prioritised above this was our goa
 We also focused on eliminating any back and forth repetitions.
 
 ### Evolution 3 Demo
-
+In the following example, our agent (orange) is stuck behind a wall and cannot eat the enemy.
 ![Oct-13-2019_11-43-58](uploads/418f8bb6a2f2a7d6f455981b221ffac9/Oct-13-2019_11-43-58.gif)
 
-420-370. Orange agent
 [Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay](uploads/54eb6805366c129af3cba966a20d242f/Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay)
 
 #### Strategy summary
