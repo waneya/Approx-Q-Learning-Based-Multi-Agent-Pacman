@@ -41,21 +41,4 @@ At initialisation of the game, each team has 15secs to perform 'registry' comput
 
 ***featureExtraction.py:*** contains the majority of functions that are utilised to generate features within *myTeam.py*.
 
-
-## Offense
-
-1. Detection of a chase by an agent. Method used is isAgentChasingAhent(self, chasingAgentIndex, chasedAgentIndex). This method determines if an agent is being chased by another by considering the distances in three consecutive game states. If an enemy ghost is chasing, the offensive agent will try to approach a capsule if available. If no capsule is available the agent will try to return home while eating the food on the way.
-
-The attched replay clearly demonstrates this technique:
-[replay-0](uploads/bcab2c8cd615255eaea034f5e7450f2d/replay-0)
-
-2. One of the biggest challenge for the offensive agent is to break through the border and enter the enemy teritory especially when the number of entry points are few and most of them are blocked by walls. The approach is using random points at home border. If our agent fails to enter the enemy teritory from a point because it is protected by enemy agent, it changes its path randomly and try to enter enemy teritory from a different point. After failing to enter from the center it tries to enter from top at time 975 and broken into enemy teritory successfully. At around 820 another feature is demonstrated and  our agent also avoids dead end [instead of going down in the column to food) it prefers to go up to avoid trapping in the dead end ( the method is detecting dead tunnels (path with no exit) [method: isSuccessorTunnel( successorPosition, gameState) that uses IDF to detect dead tunnels (with or without Food,) and the logic is: if enemy is nearby it will avoid dead tunnel  even if it has food), if the enemy is not nearby it may try 2 go to tunnel and collect food, if there is no food it will never go to that path. This is demonstrated at 820, going down leads to dead tunnel) 
-
-[replay-0](uploads/9aede4c576242d0caa997bec838c983e/replay-0)
-
-3. Related to second feature described above at 820 that detects dead tunnels, there is another methods that calculates the number of actions available at each successor to a depth of 50 states. When an enemy is nearby or chasing the agent will only take path that has most action available. At 555 in the replay, the agent can easily move up to eat many food. Instead it contunues to move right so that it can avoid successors with fewer available actions. Effectively it saves the agent from entering dead ends when enemy is nearby. If enemy is not nearby (more than a distance of 6 maze distance), it can go inside and collect. The method name is evaluateOffensiveAgentSuccessor(self, gameState, parent, grandParent,
-                                      n, status_till_N_successors, visitedNodes, gamma = 1)
-
-[replay-0](uploads/afdc74ae6a0c5f3507ad457115d479c1/replay-0)
-
 [Back Home](/home) | [Next Home](/2_1_approach)
