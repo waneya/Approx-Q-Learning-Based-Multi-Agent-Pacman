@@ -52,9 +52,11 @@ Total Time Game: 12.0
 ## Evolution 3 | Competition results: Position - 6/33 | Percentile - 18%
 ----
 
-The entry point for an offensive agent attacking, and the point at which the defensive agent would rest was initially set to the centre point of the map. The issue with this approach was that smart agents would often go around ours and attack before we had time to react. This required altering the goal recognition. 
+The entry point for an offensive agent attacking, and the point at which the defensive agent would rest was initially set to the centre point of the map. The issue with this approach was that smart agents would often go around ours and attack before we had time to react.
 
 Perhaps surprisingly, we found, in the absence of enemy detection the best approach required randomisation. Our presumption was that smart agents were using probabilistic models to infer our position. As we were using a deterministic approach they were able to capitalise on our behaviour. 
+
+This action was only chosen as a last resort. Prioritised above this was our goal recognition technique for inferring enemies through the food they have eaten.
   
 We also focused on eliminating any back and forth repetitions.
 
