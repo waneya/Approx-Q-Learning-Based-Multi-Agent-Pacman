@@ -21,6 +21,7 @@ To solve this we have added a heuristic search algorithm to determine what paths
 ### Evolution 1 Demo
 
 ![Oct-13-2019_11-36-39](uploads/5f2c651034f914dfcede077ba04272dc/Oct-13-2019_11-36-39.gif)
+
 between 1000-800 against staff super team (our agent is red) entering dead end.[Cheeky-Pacmen_vs_staff_team_super_RANDOM1292.replay](uploads/0a9d003bd5831487c091254d22582513/Cheeky-Pacmen_vs_staff_team_super_RANDOM1292.replay)
 
 #### Strategy summary
