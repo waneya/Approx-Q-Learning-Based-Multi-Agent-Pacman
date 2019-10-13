@@ -125,13 +125,19 @@ In the following example, our offensive agent (red) has eaten a significant amou
 ## Evolution 6 | Competition results: Position -  | Percentile - 
 ----
 
-Once we successfully climbed the leaderboard, we turned our attention to beating the staff_team_super. In order to do so we recognised we had to consider our agents as a team, as opposed to individuals. To do this we implemented a 'toggle' that enabled agents to switch between offensive and defensive. Doing so allowed them to strive for a global optimum as opposed to having individuals objectives. 
+Once we successfully climbed the leader-board, we turned our attention to beating the staff_team_super. In order to do so we recognised we had to consider our agents as a team, as opposed to individuals. To do this we implemented a 'toggle' that enabled agents to switch between offensive and defensive. Doing so allowed them to strive for a global optimum as opposed to having individuals objectives. 
 
-### Evolution 5 demo
+### Evolution 6 demo
 
 This demonstration shows the blue defensive player turning offensive. The agent chose to do this as the enemy ate a capsuled and it became scared.
 
 ![turning_offensive](uploads/85202ba265c4ee2310deb13ca1d61f04/turning_offensive.gif)
 
+# Future possible evolutions
+
+Given more time and additional resources, potential evolutions that could improve the performance of our agents are:
+*  Adapting to a multi 'hybrid' agent problem, with reward functions adjusted to reward overall behaviour of the agents, including cooperative behaviour.
+* Creating a more rigourous structure that allows for testing and ensuring generalisation of certain conditional decision-making. We did not have time to implement all conditions as effective and well-defined features for input into our Q-learning technique, so provided with more time, we would strive to do this to ensure improved generalisation and optimality convergence.
+* Create a feedback loop of evolutions so that they are tested against each other, in an attempt to increase the sample size of varying agent behaviours - which is currently restricted to the nightly competitions and is unsufficient for statistical significance testing. Or somehow find a pool of agents that can be tested as such within the rules of the competition.
 
 [Previous Page](/3_approach_evolution)| [Next Page](/4_conclusion)
