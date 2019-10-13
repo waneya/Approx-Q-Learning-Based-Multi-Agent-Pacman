@@ -132,13 +132,10 @@ This demonstration shows the blue defensive player turning offensive. The agent 
 
 1
 
-| # | Pros | Cons |
+| Evolution | Pros | Cons |
 |-------|-----------------|:-------------|
 |1| Avoid getting stuck in dead-ends | Agent sometimes overlooked food that was placed in a dead-end  |
-|| Find optimal paths    | Increased computation time |
-
-3
-| Pros | Cons |
+|1| Find optimal paths    | Increased computation time |
 |-----------------|:-------------|
 | Assisted in avoiding detection | Match results had a difficult to predict non-deterministic element |
 | Prevented getting stuck in the centre     | Impacted ability to learn from this feature      |
