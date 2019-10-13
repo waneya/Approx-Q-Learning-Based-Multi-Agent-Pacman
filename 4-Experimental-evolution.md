@@ -18,13 +18,11 @@ Our evolutions seem to demonstrate good general progress, however it is difficul
 
 On 7th October we found out that our agent was entering into the dead ends and getting killed. This was primarily due to the fact that we did not implement any 'look ahead' features. As a result, the learning process assigned a high priority to following (or escaping) enemy agents, as opposed to finding the optimal path. As identified earlier, this was one of the pitfalls with approximate Q-learning - if we did not implement effective features, the learning process would skew towards sub-optimal states.
 
-To solve this we have added a heuristic search algorithm to determine what paths to take. The heuristic looked ahead to check number of available actions to n-depth and avoid entering a position that limited the number of actions available.
+To solve this we have added a [heuristic search algorithm](/3.2 Heuristic Search Algorithms) to determine what paths to take. The heuristic looked ahead to check number of available actions to n-depth and avoid entering a position that limited the number of actions available.
 
 ### Evolution 1 demo
 In the following example, our agent (orange) is stuck behind a wall and cannot eat the enemy.
 ![Oct-13-2019_11-36-39](uploads/5f2c651034f914dfcede077ba04272dc/Oct-13-2019_11-36-39.gif)
-
-between 1000-800 against staff super team (our agent is red) entering dead end.[Cheeky-Pacmen_vs_staff_team_super_RANDOM1292.replay](uploads/0a9d003bd5831487c091254d22582513/Cheeky-Pacmen_vs_staff_team_super_RANDOM1292.replay)
 
 #### Strategy summary
 
@@ -38,7 +36,7 @@ between 1000-800 against staff super team (our agent is red) entering dead end.[
 
 We found out that our offensive agent was continuously exceeding the time limit to make a move and crashing.
 
-We figured out that getting number of actions available to a depth of n with n>8 was causing this problem. This was an important feature to find dead ends and avoid them when being chased by enemy agent. To improve this, we wrote an efficient algorithm to find out this depth using IDS. With the new version we can work on n>50 and not exceed the time limit.
+We figured out that getting number of actions available to a depth of n with n>8 was causing this problem. This was an important feature to find dead ends and avoid them when being chased by enemy agent. To improve this, we wrote an efficient [heuristic search algorithm](/3.2 Heuristic Search Algorithms) to find out this depth using IDS. With the new version we can work on n>50 and not exceed the time limit.
 
 ### Evolution 2 demo
 
@@ -68,8 +66,6 @@ We also focused on eliminating any back and forth repetitions.
 In the following example our agent (orange) is resting in the middle of the map. Due to it sitting in one location the blue offensive agent is able to sneak around the outside of the map and attack our position.
 ![Oct-13-2019_11-43-58](uploads/418f8bb6a2f2a7d6f455981b221ffac9/Oct-13-2019_11-43-58.gif)
 
-[Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay](uploads/54eb6805366c129af3cba966a20d242f/Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay)
-
 Fortunately our agent was very good at inferring opponent position use our goal recognition technique. As evidenced below, our orange defensive agent was able to identify the blue agent was in its territory once it ate some food.
 ![goal_Rec](uploads/3b95db5c7868d5f9e333d56f4bcf0d2a/goal_Rec.gif)
 
@@ -83,7 +79,7 @@ Fortunately our agent was very good at inferring opponent position use our goal 
 ## Evolution 4 | Competition results: Position - 17/40 | Percentile - 42%
 ----
 
-The evolution tested on 11th October integrated a feature in which agent would kill itself when stuck between an enemy ghost agent and a wall. Superior agents would trap our agent and remove any ability to play the game. We found out that the feature was not working correctly and agent is killing itself randomly - which could be a possible justification of our lowering in percentile for this evolution's nightly competition performance.
+The evolution tested on 11th October integrated a feature in which the agent would kill itself when stuck between an enemy ghost agent and a wall. Superior agents would trap our agent and remove any ability to play the game. We found out that the feature was not working correctly and the agent was killing itself randomly - which could be a possible justification for our low percentile for this evolution's nightly competition.
 
 At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`, which would also later be further improved to incremental positive score changes as discussed in section '3.1 Approximate Q-learning'.
 
@@ -103,9 +99,9 @@ the replay below at around time 600-500.
 ## Evolution 5 | Competition results: Position - 4/47 | Percentile - 9%
 ----
 
-On 12th October the agent would return home after eating one-third food. In the problem below against staff team super and top, our team lost because the agent collected enough food but did not focus on returning home when the time was running out. We added a condition that when less than 200 unit of time is left, pacman will focus on returning home, in any case. After adding this condition we won against all staff-teams on 12th october in the 8am session.
+On 12th October the agent would return home after eating one-third food. In the problem below against staff_team_super and staff_team_top our team lost because the agent collected enough food but did not focus on returning home when the time was running out. We added a condition that when less than 200 unit of time is left, pacman will focus on returning home, in any case. After adding this condition we won against all staff-teams on 12th october in the 8am session.
 
-This evolution included an important shift in the Q-learning rewards, whereby we attempted to isolate rewards of offensive and defensive agents so that their performance did not influence each other's rewards. Further explanation can be found in section '3.1 Approximate Q-learning'. In general, this allowed our agents to better learn how to weight features to maximise their own performance as opposed to being misled - for example, a defensive agent can think it is improving with our previous reward shaping, however, it could just be misled by our offensive agent's improved performance.
+This evolution included an important shift in the Q-learning rewards, whereby we attempted to isolate rewards of offensive and defensive agents so that their performance did not influence each other's rewards. Further explanation can be found in section [3.1 Approximate Q-learning](/3.1 Approximate Q-learning). In general, this allowed our agents to better learn how to weight features to maximise their own performance as opposed to being misled - for example, a defensive agent can think it is improving with our previous reward shaping, however, it could just be misled by our offensive agent's improved performance.
 
 
 ### Evolution 5 demo
