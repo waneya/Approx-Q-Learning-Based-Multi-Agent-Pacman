@@ -71,7 +71,7 @@ We also focused on eliminating any back and forth repetitions.
 
 ### Evolution 3 demo
 
-#### *Enemy looping around agent*
+#### *Finding another way in*
 In the following example our agent (red) is trying to attack through the middle of the map. It identifies that the current defender is also in the middle so moves up and finds another way in.
 
 ![find_another_entry](uploads/7ac9f21d4767dd68b286990b4f7d31a2/find_another_entry.gif)
