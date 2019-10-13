@@ -1,5 +1,21 @@
 # UoM COMP90054 Contest Project
 
+                              Y\     /Y
+                              | \ _ / |
+        _____                 | =(_)= |
+    ,-~"     "~-.           ,-~\/^ ^\/~-.
+  ,^ ___     ___ ^.       ,^ ___     ___ ^.
+ / .^   ^. .^   ^. \     / .^   ^. .^   ^. \
+Y  l    O! l    O!  Y   Y  lo    ! lo    !  Y
+l_ `.___.' `.___.' _[   l_ `.___.' `.___.' _[
+l^~"-------------"~^I   l^~"-------------"~^I
+!\,               ,/!   !                   !
+ \ ~-.,_______,.-~ /     \                 /
+  ^.             .^       ^.             .^   
+    "-.._____.,-"           "-.._____.,-"
+
+   ->**Brought to you by CheekyPacmen**<-
+
 - [1. Home and Introduction](/Home)
 - [2. Design Choices (Offense/Defense)](/2 Design choices)
     - [3.1 Approximate Q Learning](/3.1 Approximate Q learning)
