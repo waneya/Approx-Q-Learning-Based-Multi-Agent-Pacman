@@ -68,6 +68,9 @@ In the following example our agent (orange) is resting in the middle of the map.
 
 [Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay](uploads/54eb6805366c129af3cba966a20d242f/Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay)
 
+Fortunately our agent was very good at inferring opponent position use our goal recognition technique. As evidenced below, our orange defensive agent was able to identify the blue agent was in its territory.
+![goal_Rec](uploads/3b95db5c7868d5f9e333d56f4bcf0d2a/goal_Rec.gif)
+
 #### Strategy summary
 
 | Pros | Cons |
