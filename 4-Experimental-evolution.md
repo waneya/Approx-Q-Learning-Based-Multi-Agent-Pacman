@@ -16,7 +16,7 @@ Experimental evolution, along with associated replays are illustrated below. We 
 
 On 7th October we found out that our agent was entering into the dead ends and getting killed. This was primarily due to the fact that we did not implement any 'look ahead' features. As a result, the learning process assigned a high priority to following (or escaping) enemy agents, as opposed to finding the optimal path. As identified earlier, this was one of the pitfalls with approximate Q-learning - if we did not implement effective features, the learning process would skew towards sub-optimal states.
 
-To solve this we have added a feature to check number of available actions of a successor node, and avoid entering a position that limited the number of actions available.
+To solve this we have added a heuristic search algorithm to determine what paths to take. The heuristic looked ahead to check number of available actions to n-depth and avoid entering a position that limited the number of actions available.
 
 ### Evolution 1 Demo
 
@@ -26,8 +26,8 @@ between 1000-800 against staff super team (our agent is red) entering dead end.[
 
 | Pros | Cons |
 |-----------------|:-------------|
-| First body part | Second cell  |
-| Second line     | foo          |
+| Avoid getting stuck in dead-ends | Agent sometimes overlooked food that was placed in a dead-end  |
+|     | Increased computation time |
 
 ## Evolution 2 | Competition results: Position - 24/29 | Percentile - 83%
 ----
