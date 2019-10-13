@@ -11,7 +11,7 @@ Experimental evolution, along with associated replays are illustrated below. We 
 |5|9%|12/10/2019|4|47|203|64|11|17|92|0|447|
 |6||13/10/2019|
 
-Our evolutions seem to demonstrate good general progress, however it is difficult to assert certainty because of the low sample sizing of nightly competitions.
+Our evolutions seem to demonstrate good general progress, however it is difficult to assert certainty because of the low sample sizing of nightly competitions. Note that each successive evolution will encompass cumulative implementation of previous evolution approaches.
 
 ## Evolution 1 | Competition results: Position - 13/23 | Percentile - 54%
 ----
@@ -148,7 +148,7 @@ This demonstration shows the blue defensive player turning offensive. The agent 
 
 Given more time and additional resources, potential evolutions that could improve the performance of our agents are:
 *  Adapting to a multi 'hybrid' agent problem, with reward functions adjusted to reward overall behaviour of the agents, including cooperative behaviour.
-* Creating a more rigourous structure that allows for testing and ensuring generalisation of certain conditional decision-making. We did not have time to implement all conditions as effective and well-defined features for input into our Q-learning technique, so provided with more time, we would strive to do this to ensure improved generalisation and optimality convergence.
-* Create a feedback loop of evolutions so that they are tested against each other, in an attempt to increase the sample size of varying agent behaviours - which is currently restricted to the nightly competitions and is unsufficient for statistical significance testing. Or somehow find a pool of agents that can be tested as such within the rules of the competition.
+* Creating a more rigorous structure that allows for testing and ensuring generalisation of certain conditional decision-making. We did not have time to implement all conditions as effective and well-defined features for input into our Q-learning technique, so provided with more time, we would strive to do this to ensure improved generalisation and optimality convergence.
+* Create a feedback loop of evolutions so that they are tested against each other, in an attempt to increase the sample size of varying agent behaviours - which is currently restricted to the nightly competitions and is insufficient for statistical significance testing. Or somehow find a pool of agents that can be tested as such within the rules of the competition.
 
 [Previous Page](/3_approach_evolution)| [Next Page](/4_conclusion)
