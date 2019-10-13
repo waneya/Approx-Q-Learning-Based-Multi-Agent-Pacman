@@ -64,7 +64,7 @@ We also focused on eliminating any back and forth repetitions.
 
 ### Evolution 3 Demo
 
-![Oct-13-2019_11-40-09](uploads/1abae1eb007c2e9fd6946775c9413723/Oct-13-2019_11-40-09.gif)
+![Oct-13-2019_11-43-58](uploads/418f8bb6a2f2a7d6f455981b221ffac9/Oct-13-2019_11-43-58.gif)
 
 420-370. Orange agent
 [Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay](uploads/54eb6805366c129af3cba966a20d242f/Cheeky-Pacmen_vs_staff_team_super_contest14Capture.replay)
