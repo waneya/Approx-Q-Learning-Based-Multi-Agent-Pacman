@@ -148,7 +148,8 @@ Once we successfully climbed the leader-board, we turned our attention to beatin
 
 ### Evolution 6 demo
 
-This demonstration shows the blue defensive player turning offensive. The agent chose to do this as the enemy ate a capsuled and it became scared.
+#### *Toggling between being offensive and defensive*
+This demonstration shows the blue defensive player turning offensive. The agent chose to do this as the enemy ate a capsule - scaring the defender.
 
 ![turning_offensive](uploads/85202ba265c4ee2310deb13ca1d61f04/turning_offensive.gif)
 
