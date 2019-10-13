@@ -58,7 +58,7 @@ The entry point for an offensive agent attacking, and the point at which the def
 
 Perhaps surprisingly, we found, in the absence of enemy detection the best approach required randomisation. Our presumption was that smart agents were using probabilistic models to infer our position. As we were using a deterministic approach they were able to capitalise on our behaviour. 
 
-This action was only chosen as a last resort. Prioritised above this was our goal recognition technique for inferring enemies through the food they have eaten.
+This action was only chosen as a last resort. Prioritised above this was our [goal recognition technique](/3.2 Heuristic Search Algorithms) for inferring enemies through the food they have eaten.
   
 We also focused on eliminating any back and forth repetitions.
 
@@ -66,7 +66,7 @@ We also focused on eliminating any back and forth repetitions.
 In the following example our agent (orange) is resting in the middle of the map. Due to it sitting in one location the blue offensive agent is able to sneak around the outside of the map and attack our position.
 ![Oct-13-2019_11-43-58](uploads/418f8bb6a2f2a7d6f455981b221ffac9/Oct-13-2019_11-43-58.gif)
 
-Fortunately our agent was very good at inferring opponent position use our goal recognition technique. As evidenced below, our orange defensive agent was able to identify the blue agent was in its territory once it ate some food.
+Fortunately our agent was very good at inferring opponent position use our [goal recognition technique](/3.2 Heuristic Search Algorithms). As evidenced below, our orange defensive agent was able to identify the blue agent was in its territory once it ate some food.
 ![goal_Rec](uploads/3b95db5c7868d5f9e333d56f4bcf0d2a/goal_Rec.gif)
 
 #### Strategy summary
