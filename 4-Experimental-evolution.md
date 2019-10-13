@@ -10,7 +10,6 @@ Experimental evolution, along with associated replays are illustrated below. We 
 |4|42%|11/10/2019|17|40|136|44|4|30|78|0|-34|
 |5|9%|12/10/2019|4|47|203|64|11|17|92|0|447|
 
-
 ## Evolution 1 | Competition results: Position - 13/23 | Percentile - 54%
 ----
 
@@ -94,8 +93,8 @@ the replay below at around time 600-500.
 
 | Pros | Cons |
 |-----------------|:-------------|
-| First body part | Second cell  |
-| Second line     | foo          |
+| Game theory allowed elimination of dominated strategies| Some situations are not easily applicable to game theory |
+| Allowed for generalisation in well-defined cases    | Risk of non-generalisation when ill-defined |
 
 ## Evolution 5 | Competition results: Position - 4/47 | Percentile - 9%
 ----
