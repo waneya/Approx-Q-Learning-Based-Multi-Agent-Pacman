@@ -20,14 +20,14 @@ We started our tournament progression as a median level player - leaving much to
 
 On 7th October we found out that our agent was entering into the dead ends and getting killed. This was primarily due to the fact that we did not implement any 'look ahead' features. As a result, the learning process assigned a high priority to following (or escaping) enemy agents, as opposed to finding the optimal path. As identified earlier, this was one of the pitfalls with approximate Q-learning - if we did not implement effective features, the learning process would skew towards sub-optimal states.
 
-To solve this we have added a [heuristic search algorithm](/3.2 Heuristic Search Algorithms) to determine what paths to take. The heuristic looked ahead to check number of available actions to n-depth and avoid entering a position that limited the number of actions available.
-
 ### Evolution 1 demo
 
 #### *Running into a dead-end*
 In the following example, our agent (red) runs into a dead-end and is trapped by the enemy.
 
 ![dead_end](uploads/6e5ca3385fddf39cc1964af4b3f44b16/dead_end.gif)
+
+To solve this we have added a [heuristic search algorithm](/3.2 Heuristic Search Algorithms) to determine what paths to take. The heuristic looked ahead to check number of available actions to n-depth and avoid entering a position that limited the number of actions available.
 
 #### Strategy summary
 
