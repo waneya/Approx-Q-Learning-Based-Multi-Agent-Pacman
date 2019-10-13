@@ -22,8 +22,6 @@
     - [3.4 Goal Recognition](/3.4 Goal Recognition)
 - [4 Experimental evolution](/4 Experimental Evolution)
 
-[Next Page ](/2 Design Choices)
-
 # Youtube presentation
 
 ![Sample Video](https://www.youtube.com/embed/enMumwvLAug)
@@ -31,3 +29,5 @@
 <figure class="video_container">
   <iframe src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
+
+[Next Page ](/2 Design Choices)
