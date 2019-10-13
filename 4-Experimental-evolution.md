@@ -149,7 +149,7 @@ This demonstration shows the blue defensive player turning offensive. The agent 
 
 5
 | Pros | Cons |
-|-----------------|:-------------|
+|-----|-----------------|:-------------|
 | Independent reward shaping for offensive and defensive agents | Difficulty in creating hybrid agents unless rewards are re-adjusted |
 | Offensive agents are more time-conscious   | If time conditions are not well generalised, this could lead to sub-optimal behaviour|
 
