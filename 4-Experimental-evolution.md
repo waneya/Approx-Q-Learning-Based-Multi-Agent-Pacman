@@ -77,7 +77,7 @@ In the following example our agent (orange) is resting in the middle of the map.
 ![Oct-13-2019_11-43-58](uploads/418f8bb6a2f2a7d6f455981b221ffac9/Oct-13-2019_11-43-58.gif)
 
 #### *Inferring using food eaten*
-Fortunately our agent was very good at inferring opponent position use our [goal recognition technique](/3.2 Heuristic Search Algorithms). As evidenced below, our orange defensive agent was able to identify the blue agent was in its territory once it ate some food.
+Fortunately our agent was very good at inferring the opponent position using our [goal recognition technique](/3.2 Heuristic Search Algorithms). As evidenced below, our orange defensive agent was able to identify the blue agent was in its territory once it ate some food.
 
 ![goal_Rec](uploads/3b95db5c7868d5f9e333d56f4bcf0d2a/goal_Rec.gif)
 
@@ -91,14 +91,19 @@ Fortunately our agent was very good at inferring opponent position use our [goal
 ## Evolution 4 | Competition results: Position - 17/40 | Percentile - 42%
 ----
 
+This round we slipped back in the leaderboard to a less than desirable 42 percentile.
+
 The evolution tested on 11th October integrated a feature in which the agent would kill itself when stuck between an enemy ghost agent and a wall. Superior agents would trap our agent and remove any ability to play the game. We found out that the feature was not working correctly and the agent was killing itself randomly - which could be a possible justification for our low percentile for this evolution's nightly competition.
 
 At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`, which would also later be further improved to incremental positive score changes as discussed in section '3.1 Approximate Q-learning'.
 
 ### Evolution 4 demo
 
-the replay below at around time 600-500.
-[Cheeky-Pacmen_vs_staff_team_super_RANDOM4214.replay](uploads/83034c46a0d216eacd086f4e97bd995e/Cheeky-Pacmen_vs_staff_team_super_RANDOM4214.replay).
+#### *Agent sporadically killing itself*
+Here we can see our agent (red) has a clear escape route, except thinks it is in a dead end so runs straight into the enemy.
+
+![suicide](uploads/4572d5a74ec2a285758e3bc1861256f3/suicide.gif)
+
 
 #### Strategy summary
 
