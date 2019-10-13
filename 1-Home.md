@@ -26,7 +26,7 @@ l^~"-------------"~^I   l^~"-------------"~^I
 ## Contents
 
 - [1. Home](/1 Home)
-- [2. Design Choices (Offense/Defense)](/2 Design choices)
+- [2. Design Choices](/2 Design choices)
     - [3.1 Approximate Q Learning](/3.1 Approximate Q Learning)
     - [3.2 Heuristic Search Algorithms](/3.2 Heuristic Search Algorithms)
     - [3.3 Game Theoretic Methods](/3.3 Game Theoretic Methods)
