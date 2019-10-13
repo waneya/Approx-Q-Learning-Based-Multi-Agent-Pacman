@@ -116,10 +116,11 @@ Here we can see our agent (red) has a clear escape route, except thinks it is in
 ## Evolution 5 | Competition results: Position - 4/47 | Percentile - 9%
 ----
 
-On 12th October the agent would return home after eating one-third food. In the problem below against staff_team_super and staff_team_top our team lost because the agent collected enough food but did not focus on returning home when the time was running out. We added a condition that when less than 200 unit of time is left, pacman will focus on returning home, in any case. After adding this condition we won against all staff-teams on 12th october in the 8am session.
+Ah hah! With this evolution we were right on track.
+
+On 12th October the agent would return home after eating one-third of the food. In the problem below against staff_team_super and staff_team_top our team lost because the agent collected enough food but did not focus on returning home when the time was running out. We added a condition that when less than 200 unit of time is left, pacman will focus on returning home.
 
 This evolution included an important shift in the Q-learning rewards, whereby we attempted to isolate rewards of offensive and defensive agents so that their performance did not influence each other's rewards. Further explanation can be found in section [3.1 Approximate Q-learning](/3.1 Approximate Q-learning). In general, this allowed our agents to better learn how to weight features to maximise their own performance as opposed to being misled - for example, a defensive agent can think it is improving with our previous reward shaping, however, it could just be misled by our offensive agent's improved performance.
-
 
 ### Evolution 5 demo
 
@@ -128,7 +129,7 @@ In the following example, our offensive agent (red) has eaten a significant amou
 
 ![notreturning](uploads/133a1679fe382ef5c36d8f89185b68c2/notreturning.gif)
 
-### Success in beating all staff!
+### And the result.....? Success in beating all staff!
 
 ![image](uploads/632378307ac162f354ba5ff8d8bdf704/image.png)
 
@@ -143,7 +144,7 @@ In the following example, our offensive agent (red) has eaten a significant amou
 ## Evolution 6 | Competition results: Position -  | Percentile - 
 ----
 
-Once we successfully climbed the leader-board, we turned our attention to beating the staff_team_super. In order to do so we recognised we had to consider our agents as a team, as opposed to individuals. To do this we implemented a 'toggle' that enabled agents to switch between offensive and defensive. Doing so allowed them to strive for a global optimum as opposed to having individuals objectives. 
+Once we successfully climbed the leader-board, we turned our attention to beating the staff_team_super consistently. In order to do so we recognised we had to consider our agents as a team, as opposed to individuals. To do this we implemented a 'toggle' that enabled agents to switch between offensive and defensive. Doing so allowed them to strive for a global optimum as opposed to having individuals objectives. 
 
 ### Evolution 6 demo
 
