@@ -42,8 +42,6 @@ Unfortunately, this hindered rather helped our agent... We slipped into the bott
 
 We found out that our offensive agent was continuously exceeding the time limit to make a move and crashing.
 
-We deduced that getting number of actions available to a depth of n with n>8 was causing this problem. This was a crucial feature, so the implementation had to be reassessed. Otherwise there was a significant risk of being trapped in dead-end positions. To improve this, we wrote an efficient [heuristic search algorithm](/3.2 Heuristic Search Algorithms) to determine the optimal position using IDS. We defined the goal of the search  With the new version we can work on n>50 and not exceed the time limit.
-
 ### Evolution 2 demo
 
 ```
@@ -57,17 +55,13 @@ recorded
 Total Time Game: 12.0
 ```
 
+We deduced that getting number of actions available to a depth of n with n>8 was causing this problem. This was a crucial feature, so the implementation had to be reassessed. Otherwise there was a significant risk of being trapped in dead-end positions. To improve this, we wrote an efficient [heuristic search algorithm](/3.2 Heuristic Search Algorithms) to determine the optimal position using IDS. We defined the goal of the search  With the new version we can work on n>50 and not exceed the time limit.
+
 ## Evolution 3 | Competition results: Position - 6/33 | Percentile - 18%
 ----
 This result confirmed we were on the right track, placing in the top quintile of players.
 
 The entry point for an offensive agent attacking, and the point at which the defensive agent would rest was initially set to the centre point of the map. The issue with this approach was that smart agents would often go around ours and attack before we had time to react.
-
-Perhaps surprisingly, we found, in the absence of enemy detection the best approach required randomisation. Our presumption was that smart agents were using probabilistic models to infer our position. As we were using a deterministic approach they were able to capitalise on our behaviour. 
-
-This action was only chosen as a last resort. Prioritised above this was our [goal recognition technique](/3.2 Heuristic Search Algorithms) for inferring enemies through the food they have eaten.
-  
-We also focused on eliminating any back and forth repetitions.
 
 ### Evolution 3 demo
 
@@ -75,6 +69,12 @@ We also focused on eliminating any back and forth repetitions.
 In the following example our agent (red) is trying to attack through the middle of the map. It identifies that the current defender is also in the middle so moves up and finds another way in.
 
 ![find_another_entry](uploads/7ac9f21d4767dd68b286990b4f7d31a2/find_another_entry.gif)
+
+Perhaps surprisingly, we found, in the absence of enemy detection the best approach required randomisation. Our presumption was that smart agents were using probabilistic models to infer our position. As we were using a deterministic approach they were able to capitalise on our behaviour. 
+
+This action was only chosen as a last resort. Prioritised above this was our [goal recognition technique](/3.2 Heuristic Search Algorithms) for inferring enemies through the food they have eaten.
+  
+We also focused on eliminating any back and forth repetitions.
 
 #### *Inferring using food eaten*
 Fortunately our agent was very good at inferring the opponent position using our [goal recognition technique](/3.2 Heuristic Search Algorithms). As evidenced below, our orange defensive agent was able to identify the blue agent was in its territory once it ate some food.
@@ -95,8 +95,6 @@ This round we slipped back in the leaderboard to a less than desirable 42 percen
 
 The evolution tested on 11th October integrated a feature in which the agent would kill itself when stuck between an enemy ghost agent and a wall. Superior agents would trap our agent and remove any ability to play the game. We found out that the feature was not working correctly and the agent was killing itself randomly - which could be a possible justification for our low percentile for this evolution's nightly competition.
 
-At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`, which would also later be further improved to incremental positive score changes as discussed in section '3.1 Approximate Q-learning'.
-
 ### Evolution 4 demo
 
 #### *Agent sporadically killing itself*
@@ -104,6 +102,7 @@ Here we can see our agent (red) has a clear escape route, except thinks it is in
 
 ![suicide](uploads/4572d5a74ec2a285758e3bc1861256f3/suicide.gif)
 
+At this stage our reward function was defined as: `1 - (DistanceToFood/TotalFood) + Score`. This was inhibiting the agents ability to learn a 'suicide' move as it would lead to the agent being a long distance away from food. At this junction, we reassessed our approach for reward shaping and altered it to: `FoodLeft/StartingFood + Score`, which would also later be further improved to incremental positive score changes as discussed in section '3.1 Approximate Q-learning'.
 
 #### Strategy summary
 
@@ -120,14 +119,14 @@ Ah hah! With this evolution we were right on track.
 
 On 12th October the agent would return home after eating one-third of the food. In the problem below against staff_team_super and staff_team_top our team lost because the agent collected enough food but did not focus on returning home when the time was running out. We added a condition that when less than 200 unit of time is left, pacman will focus on returning home.
 
-This evolution included an important shift in the Q-learning rewards, whereby we attempted to isolate rewards of offensive and defensive agents so that their performance did not influence each other's rewards. Further explanation can be found in section [3.1 Approximate Q-learning](/3.1 Approximate Q-learning). In general, this allowed our agents to better learn how to weight features to maximise their own performance as opposed to being misled - for example, a defensive agent can think it is improving with our previous reward shaping, however, it could just be misled by our offensive agent's improved performance.
-
 ### Evolution 5 demo
 
 #### *Agent not returning home*
 In the following example, our offensive agent (red) has eaten a significant amount of food. Unfortunately, he is still hungry and not willing to deposit the food, causing the team to lose as the time runs out.
 
 ![notreturning](uploads/133a1679fe382ef5c36d8f89185b68c2/notreturning.gif)
+
+This evolution included an important shift in the Q-learning rewards, whereby we attempted to isolate rewards of offensive and defensive agents so that their performance did not influence each other's rewards. Further explanation can be found in section [3.1 Approximate Q-learning](/3.1 Approximate Q-learning). In general, this allowed our agents to better learn how to weight features to maximise their own performance as opposed to being misled - for example, a defensive agent can think it is improving with our previous reward shaping, however, it could just be misled by our offensive agent's improved performance.
 
 ### And the result.....? Success in beating all staff!
 
