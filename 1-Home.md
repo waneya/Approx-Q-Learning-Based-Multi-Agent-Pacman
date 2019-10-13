@@ -15,7 +15,7 @@ l^~"-------------"~^I   l^~"-------------"~^I
   ^.             .^       ^.             .^   
     "-.._____.,-"           "-.._____.,-"
 ```
-  ->**Brought to you by CheekyPacmen**<-
+##Brought to you by CheekyPacmen
 
 - [1. Home and Introduction](/Home)
 - [2. Design Choices (Offense/Defense)](/2 Design choices)
