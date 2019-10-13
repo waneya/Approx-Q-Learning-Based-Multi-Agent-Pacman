@@ -24,10 +24,10 @@ To solve this we have added a [heuristic search algorithm](/3.2 Heuristic Search
 
 ### Evolution 1 demo
 
-#### *Stuck behind a wall*
-In the following example, our agent (orange) is stuck behind a wall and cannot eat the enemy.
+#### *Running into a dead-end*
+In the following example, our agent (red) runs into a dead-end and is trapped by the enemy.
 
-![Oct-13-2019_11-36-39](uploads/5f2c651034f914dfcede077ba04272dc/Oct-13-2019_11-36-39.gif)
+![dead_end](uploads/6e5ca3385fddf39cc1964af4b3f44b16/dead_end.gif)
 
 #### Strategy summary
 
