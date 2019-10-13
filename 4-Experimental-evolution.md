@@ -133,11 +133,11 @@ This demonstration shows the blue defensive player turning offensive. The agent 
 1
 
 |#| Approach | Pros | Cons |
-|-------|-----------------|:-------------|
+|-----|-------|-----------------|:-------------|
 |1|Heuristic Search| Avoid getting stuck in dead-ends | Agent sometimes overlooked food that was placed in a dead-end  |
 |2|Heuristic Search| Find optimal paths    | Increased computation time |
 |3|Goal Recognition| Assisted in avoiding detection | Match results had a difficult to predict non-deterministic element |
-|3|Goal Recognition| Prevented getting stuck in the centre     | Impacted ability to learn from this feature      |
+|3|Goal Recognition| Prevented getting stuck in the centre     | Impacted ability to learn from this feature     |
 |4|Game Theoretic Method| Game theory allowed elimination of dominated strategies| Some situations are not easily applicable to game theory |
 |4|Approximate Q Learning| Allowed for generalisation in well-defined cases    | Risk of non-generalisation when ill-defined |
 |4|Approximate Q Learning| Rewards re-shaped to properly incentivise offensive agents | Initial ill-defined rewards led to bad incentives in this night's test|
