@@ -136,22 +136,13 @@ This demonstration shows the blue defensive player turning offensive. The agent 
 |-------|-----------------|:-------------|
 |1| Avoid getting stuck in dead-ends | Agent sometimes overlooked food that was placed in a dead-end  |
 |1| Find optimal paths    | Increased computation time |
-|-----------------|:-------------|
-| Assisted in avoiding detection | Match results had a difficult to predict non-deterministic element |
-| Prevented getting stuck in the centre     | Impacted ability to learn from this feature      |
-
-4
-| Pros | Cons |
-|-----------------|:-------------|
-| Game theory allowed elimination of dominated strategies| Some situations are not easily applicable to game theory |
-| Allowed for generalisation in well-defined cases    | Risk of non-generalisation when ill-defined |
-| Rewards re-shaped to properly incentivise offensive agents | Initial ill-defined rewards led to bad incentives in this night's test|
-
-5
-| Pros | Cons |
-|-----|-----------------|:-------------|
-| Independent reward shaping for offensive and defensive agents | Difficulty in creating hybrid agents unless rewards are re-adjusted |
-| Offensive agents are more time-conscious   | If time conditions are not well generalised, this could lead to sub-optimal behaviour|
+|3| Assisted in avoiding detection | Match results had a difficult to predict non-deterministic element |
+|3| Prevented getting stuck in the centre     | Impacted ability to learn from this feature      |
+|4| Game theory allowed elimination of dominated strategies| Some situations are not easily applicable to game theory |
+|4| Allowed for generalisation in well-defined cases    | Risk of non-generalisation when ill-defined |
+|4| Rewards re-shaped to properly incentivise offensive agents | Initial ill-defined rewards led to bad incentives in this night's test|
+|5| Independent reward shaping for offensive and defensive agents | Difficulty in creating hybrid agents unless rewards are re-adjusted |
+|5| Offensive agents are more time-conscious   | If time conditions are not well generalised, this could lead to sub-optimal behaviour|
 
 # Future possible evolutions
 
