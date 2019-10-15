@@ -24,10 +24,10 @@
 
 # Youtube presentation
 
-![Sample Video](https://www.youtube.com/embed/enMumwvLAug)
+![Our Strategy](https://www.youtube.com/watch?v=dRNBx25eenw&feature=youtu.be)
 
 <figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/enMumwvLAug" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe src="https://www.youtube.com/watch?v=dRNBx25eenw&feature=youtu.be" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
 [Next Page ](/2 Design Choices)
