@@ -24,7 +24,7 @@
 
 # Youtube presentation
 
-[Our Strategy](https://www.youtube.com/watch?v=dRNBx25eenw&feature=youtu.be)
+[Click here for our recorded video!](https://www.youtube.com/watch?v=dRNBx25eenw&feature=youtu.be)
 
 <figure class="video_container">
   <iframe src="https://www.youtube.com/embed/dRNBx25eenw" frameborder="0" allowfullscreen="true"> </iframe>
