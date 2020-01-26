@@ -7,3 +7,4 @@ We have constructed a Multi-Agent AI Pacman solution using Approximate Q-learnin
 A video describing the assignment can be found at given link https://www.youtube.com/watch?v=dRNBx25eenw&feature=youtu.be
 # Notes
 As per the advise of Pacman frame developer (UC-Berkely), the implementation code has been kept private. 
+http://ai.berkeley.edu/project_overview.html
