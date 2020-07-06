@@ -12,17 +12,12 @@
 # Berkely-AI-Pacman-Competition-Wiki
 This is an assignment related to the AI-Berkely-Pacman-Copetition at the University of Melbourne.
 The details of the AI implementation can be read in the repository. 
+[![Multi-Agent Pacman AI](https://img.youtube.com/vi/https://www.youtube.com/watch?v=dRNBx25eenw&feature=youtu.be/0.jpg)](https://www.youtube.com/watch?v=https://www.youtube.com/watch?v=dRNBx25eenw&feature=youtu.be)
 # Techniques Used
 We have constructed a Multi-Agent AI Pacman solution using Approximate Q-learning based framework that learns the feature-weights during training. Other techniques involve using Monte-Carlo Search and Iterative Depth First Search Algorithms. Our team was able to beat all four staff teams (Super, Top, Medium and Easy)
 
 
-# Youtube presentation
-
-[Click here for our recorded video](https://www.youtube.com/watch?v=dRNBx25eenw&feature=youtu.be)
-
-
-
 
 # Notes
-As per the advise of Pacman framework developer (UC-Berkely), the implementation code has been kept private. 
+As per the advise of Pacman framework developer (UC-Berkely), the implementation code has been kept private. The reason is that they want other students to practise the assignments without looking at the work of other students.
 http://ai.berkeley.edu/project_overview.html
