@@ -14,6 +14,7 @@ This is an assignment related to the AI-Berkely-Pacman-Copetition at the Univers
 The details of the AI implementation can be read in the repository. 
 
 A description of the techniques that we used is given in the video below:
+
 [![Multi-Pacman-Agent](https://img.youtube.com/vi/dRNBx25eenw/0.jpg)](https://www.youtube.com/watch?v=dRNBx25eenw)
 
 
